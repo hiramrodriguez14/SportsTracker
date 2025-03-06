@@ -1,0 +1,19 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Flask Debug",
+            "type": "python",
+            "request": "launch",
+            //cuidaaado, esto redirecciona al launching de vs code
+            "program": "${workspaceFolder}/code/tester.py",
+            "console": "integratedTerminal",
+            "args": [],
+            "justMyCode": true,
+            "env": {
+                "FLASK_APP": "app.py",
+                "FLASK_ENV": "development"
+            }
+        }
+    ]
+}

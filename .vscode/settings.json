@@ -1,0 +1,9 @@
+{
+    "terminal.integrated.profiles.windows": {
+        "MSYS2 UCRT64": {
+            "path": "C:\\msys64\\ucrt64\\bin\\bash.exe",
+            "args": ["--login"]
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "MSYS2 UCRT64"
+}
