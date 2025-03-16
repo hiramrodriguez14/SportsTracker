@@ -1,0 +1,550 @@
+[
+    {
+        "id": 1,
+        "name": "Strongman",
+        "gender": "X",
+        "venue": "indoor",
+        "exercises": [
+            29
+        ]
+    },
+    {
+        "id": 2,
+        "name": "Table Tennis",
+        "gender": "X",
+        "venue": "indoor",
+        "exercises": [
+            735,
+            325,
+            570
+        ]
+    },
+    {
+        "id": 3,
+        "name": "Esports",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            264,
+            229
+        ]
+    },
+    {
+        "id": 4,
+        "name": "Skiing",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            510,
+            824,
+            77,
+            298
+        ]
+    },
+    {
+        "id": 5,
+        "name": "Martial Arts",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            60,
+            72,
+            829,
+            825
+        ]
+    },
+    {
+        "id": 6,
+        "name": "High Jump",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            727,
+            123,
+            666,
+            341,
+            135
+        ]
+    },
+    {
+        "id": 7,
+        "name": "Handball",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            13,
+            24,
+            555,
+            427,
+            559
+        ]
+    },
+    {
+        "id": 8,
+        "name": "Tennis",
+        "gender": "M",
+        "venue": "indoor",
+        "exercises": [
+            778,
+            486,
+            580,
+            288,
+            610
+        ]
+    },
+    {
+        "id": 9,
+        "name": "Football",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            188,
+            456,
+            616,
+            202
+        ]
+    },
+    {
+        "id": 10,
+        "name": "Karate",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            849
+        ]
+    },
+    {
+        "id": 11,
+        "name": "Canoeing",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            113
+        ]
+    },
+    {
+        "id": 12,
+        "name": "Boxing",
+        "gender": "X",
+        "venue": "indoor",
+        "exercises": [
+            865
+        ]
+    },
+    {
+        "id": 13,
+        "name": "Taekwondo",
+        "gender": "M",
+        "venue": "indoor",
+        "exercises": [
+            510
+        ]
+    },
+    {
+        "id": 14,
+        "name": "Sumo",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            715,
+            774,
+            208
+        ]
+    },
+    {
+        "id": 15,
+        "name": "Wrestling",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            705
+        ]
+    },
+    {
+        "id": 16,
+        "name": "Archery",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            770,
+            792
+        ]
+    },
+    {
+        "id": 17,
+        "name": "Baseball",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            655,
+            375,
+            293,
+            257,
+            545
+        ]
+    },
+    {
+        "id": 18,
+        "name": "Basketball",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            636,
+            192,
+            293
+        ]
+    },
+    {
+        "id": 19,
+        "name": "Skateboarding",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            694,
+            724,
+            49,
+            656,
+            585
+        ]
+    },
+    {
+        "id": 20,
+        "name": "Long Jump",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            358
+        ]
+    },
+    {
+        "id": 21,
+        "name": "Gymnastics",
+        "gender": "X",
+        "venue": "indoor",
+        "exercises": [
+            845,
+            5,
+            543,
+            423,
+            161
+        ]
+    },
+    {
+        "id": 22,
+        "name": "Snowboarding",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            202,
+            689,
+            552
+        ]
+    },
+    {
+        "id": 23,
+        "name": "Weightlifting",
+        "gender": "M",
+        "venue": "indoor",
+        "exercises": [
+            855,
+            495,
+            751,
+            615,
+            213
+        ]
+    },
+    {
+        "id": 24,
+        "name": "Motocross",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            799,
+            255,
+            710
+        ]
+    },
+    {
+        "id": 25,
+        "name": "Golf",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            689,
+            125,
+            603
+        ]
+    },
+    {
+        "id": 26,
+        "name": "Judo",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            293,
+            61,
+            513
+        ]
+    },
+    {
+        "id": 27,
+        "name": "Rock Climbing",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            870
+        ]
+    },
+    {
+        "id": 28,
+        "name": "Rowing",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            714
+        ]
+    },
+    {
+        "id": 29,
+        "name": "Bowling",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            474,
+            168,
+            872,
+            771
+        ]
+    },
+    {
+        "id": 30,
+        "name": "Cycling",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            599
+        ]
+    },
+    {
+        "id": 31,
+        "name": "Swimming",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            703,
+            195,
+            157,
+            77,
+            317
+        ]
+    },
+    {
+        "id": 32,
+        "name": "Cricket",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            5
+        ]
+    },
+    {
+        "id": 33,
+        "name": "Triathlon",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            374,
+            505
+        ]
+    },
+    {
+        "id": 34,
+        "name": "Diving",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            283,
+            782,
+            369,
+            393
+        ]
+    },
+    {
+        "id": 35,
+        "name": "Equestrian",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            360,
+            621,
+            859
+        ]
+    },
+    {
+        "id": 36,
+        "name": "Pole Vault",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            418,
+            153,
+            708,
+            462
+        ]
+    },
+    {
+        "id": 37,
+        "name": "Surfing",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            15,
+            14,
+            290,
+            332
+        ]
+    },
+    {
+        "id": 38,
+        "name": "Fencing",
+        "gender": "M",
+        "venue": "indoor",
+        "exercises": [
+            730,
+            478
+        ]
+    },
+    {
+        "id": 39,
+        "name": "Rugby",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            48
+        ]
+    },
+    {
+        "id": 40,
+        "name": "Dancing",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            321,
+            426,
+            408,
+            651,
+            25
+        ]
+    },
+    {
+        "id": 41,
+        "name": "Soccer",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            495
+        ]
+    },
+    {
+        "id": 42,
+        "name": "Speed Skating",
+        "gender": "M",
+        "venue": "outdoor",
+        "exercises": [
+            150,
+            432,
+            319,
+            140,
+            293
+        ]
+    },
+    {
+        "id": 43,
+        "name": "Running",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            507,
+            322,
+            812,
+            167,
+            7
+        ]
+    },
+    {
+        "id": 44,
+        "name": "Volleyball",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            286,
+            382
+        ]
+    },
+    {
+        "id": 45,
+        "name": "Hockey",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            267,
+            862,
+            7,
+            606,
+            436
+        ]
+    },
+    {
+        "id": 46,
+        "name": "Drone Racing",
+        "gender": "X",
+        "venue": "outdoor",
+        "exercises": [
+            862
+        ]
+    },
+    {
+        "id": 47,
+        "name": "Lacrosse",
+        "gender": "F",
+        "venue": "outdoor",
+        "exercises": [
+            37
+        ]
+    },
+    {
+        "id": 48,
+        "name": "Parkour",
+        "gender": "M",
+        "venue": "indoor",
+        "exercises": [
+            77,
+            713,
+            23,
+            202
+        ]
+    },
+    {
+        "id": 49,
+        "name": "Powerlifting",
+        "gender": "X",
+        "venue": "indoor",
+        "exercises": [
+            257,
+            350,
+            461,
+            148,
+            227
+        ]
+    },
+    {
+        "id": 50,
+        "name": "Badminton",
+        "gender": "F",
+        "venue": "indoor",
+        "exercises": [
+            715,
+            721
+        ]
+    }
+]

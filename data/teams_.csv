@@ -1,0 +1,100 @@
+id,name,sport
+1,Strongman Team 1,1
+2,Strongman Team 2,1
+3,Table Tennis Team 3,2
+4,Table Tennis Team 4,2
+5,Table Tennis Team 5,2
+6,Esports Team 6,3
+7,Esports Team 7,3
+8,Skiing Team 8,4
+9,Skiing Team 9,4
+10,Skiing Team 10,4
+11,Martial Arts Team 11,5
+12,Martial Arts Team 12,5
+13,High Jump Team 13,6
+14,High Jump Team 14,6
+15,High Jump Team 15,6
+16,Handball Team 16,7
+17,Handball Team 17,7
+18,Handball Team 18,7
+19,Tennis Team 19,8
+20,Football Team 20,9
+21,Karate Team 21,10
+22,Canoeing Team 22,11
+23,Boxing Team 23,12
+24,Boxing Team 24,12
+25,Boxing Team 25,12
+26,Taekwondo Team 26,13
+27,Sumo Team 27,14
+28,Wrestling Team 28,15
+29,Archery Team 29,16
+30,Archery Team 30,16
+31,Baseball Team 31,17
+32,Basketball Team 32,18
+33,Basketball Team 33,18
+34,Basketball Team 34,18
+35,Skateboarding Team 35,19
+36,Long Jump Team 36,20
+37,Long Jump Team 37,20
+38,Gymnastics Team 38,21
+39,Gymnastics Team 39,21
+40,Gymnastics Team 40,21
+41,Snowboarding Team 41,22
+42,Weightlifting Team 42,23
+43,Motocross Team 43,24
+44,Motocross Team 44,24
+45,Motocross Team 45,24
+46,Golf Team 46,25
+47,Golf Team 47,25
+48,Judo Team 48,26
+49,Judo Team 49,26
+50,Rock Climbing Team 50,27
+51,Rock Climbing Team 51,27
+52,Rowing Team 52,28
+53,Rowing Team 53,28
+54,Rowing Team 54,28
+55,Bowling Team 55,29
+56,Bowling Team 56,29
+57,Cycling Team 57,30
+58,Cycling Team 58,30
+59,Cycling Team 59,30
+60,Swimming Team 60,31
+61,Swimming Team 61,31
+62,Cricket Team 62,32
+63,Cricket Team 63,32
+64,Triathlon Team 64,33
+65,Triathlon Team 65,33
+66,Triathlon Team 66,33
+67,Diving Team 67,34
+68,Diving Team 68,34
+69,Equestrian Team 69,35
+70,Equestrian Team 70,35
+71,Pole Vault Team 71,36
+72,Surfing Team 72,37
+73,Surfing Team 73,37
+74,Fencing Team 74,38
+75,Fencing Team 75,38
+76,Rugby Team 76,39
+77,Rugby Team 77,39
+78,Dancing Team 78,40
+79,Soccer Team 79,41
+80,Soccer Team 80,41
+81,Speed Skating Team 81,42
+82,Speed Skating Team 82,42
+83,Speed Skating Team 83,42
+84,Running Team 84,43
+85,Volleyball Team 85,44
+86,Hockey Team 86,45
+87,Hockey Team 87,45
+88,Drone Racing Team 88,46
+89,Drone Racing Team 89,46
+90,Drone Racing Team 90,46
+91,Lacrosse Team 91,47
+92,Lacrosse Team 92,47
+93,Lacrosse Team 93,47
+94,Parkour Team 94,48
+95,Parkour Team 95,48
+96,Parkour Team 96,48
+97,Powerlifting Team 97,49
+98,Powerlifting Team 98,49
+99,Badminton Team 99,50

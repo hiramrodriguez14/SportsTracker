@@ -1,0 +1,4367 @@
+[
+  {
+    "id": 1,
+    "exercise_id": 1,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 2,
+    "exercise_id": 2,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 3,
+    "exercise_id": 3,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 4,
+    "exercise_id": 4,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 5,
+    "exercise_id": 5,
+    "muscle": "adductors"
+  },
+  {
+    "id": 6,
+    "exercise_id": 6,
+    "muscle": "adductors"
+  },
+  {
+    "id": 7,
+    "exercise_id": 7,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 8,
+    "exercise_id": 8,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 9,
+    "exercise_id": 9,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 10,
+    "exercise_id": 10,
+    "muscle": "biceps"
+  },
+  {
+    "id": 11,
+    "exercise_id": 11,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 12,
+    "exercise_id": 12,
+    "muscle": "biceps"
+  },
+  {
+    "id": 13,
+    "exercise_id": 13,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 14,
+    "exercise_id": 14,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 15,
+    "exercise_id": 15,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 16,
+    "exercise_id": 16,
+    "muscle": "chest"
+  },
+  {
+    "id": 17,
+    "exercise_id": 17,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 18,
+    "exercise_id": 18,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 19,
+    "exercise_id": 19,
+    "muscle": "middle back"
+  },
+  {
+    "id": 20,
+    "exercise_id": 20,
+    "muscle": "middle back"
+  },
+  {
+    "id": 21,
+    "exercise_id": 21,
+    "muscle": "calves"
+  },
+  {
+    "id": 22,
+    "exercise_id": 22,
+    "muscle": "glutes"
+  },
+  {
+    "id": 23,
+    "exercise_id": 23,
+    "muscle": "calves"
+  },
+  {
+    "id": 24,
+    "exercise_id": 24,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 25,
+    "exercise_id": 25,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 26,
+    "exercise_id": 26,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 27,
+    "exercise_id": 27,
+    "muscle": "chest"
+  },
+  {
+    "id": 28,
+    "exercise_id": 28,
+    "muscle": "lower back"
+  },
+  {
+    "id": 29,
+    "exercise_id": 29,
+    "muscle": "lower back"
+  },
+  {
+    "id": 30,
+    "exercise_id": 30,
+    "muscle": "lower back"
+  },
+  {
+    "id": 31,
+    "exercise_id": 31,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 32,
+    "exercise_id": 32,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 33,
+    "exercise_id": 33,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 34,
+    "exercise_id": 34,
+    "muscle": "calves"
+  },
+  {
+    "id": 35,
+    "exercise_id": 35,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 36,
+    "exercise_id": 36,
+    "muscle": "lats"
+  },
+  {
+    "id": 37,
+    "exercise_id": 37,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 38,
+    "exercise_id": 38,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 39,
+    "exercise_id": 39,
+    "muscle": "adductors"
+  },
+  {
+    "id": 40,
+    "exercise_id": 40,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 41,
+    "exercise_id": 41,
+    "muscle": "triceps"
+  },
+  {
+    "id": 42,
+    "exercise_id": 42,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 43,
+    "exercise_id": 43,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 44,
+    "exercise_id": 44,
+    "muscle": "chest"
+  },
+  {
+    "id": 45,
+    "exercise_id": 45,
+    "muscle": "biceps"
+  },
+  {
+    "id": 46,
+    "exercise_id": 46,
+    "muscle": "biceps"
+  },
+  {
+    "id": 47,
+    "exercise_id": 47,
+    "muscle": "lower back"
+  },
+  {
+    "id": 48,
+    "exercise_id": 48,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 49,
+    "exercise_id": 49,
+    "muscle": "glutes"
+  },
+  {
+    "id": 50,
+    "exercise_id": 50,
+    "muscle": "chest"
+  },
+  {
+    "id": 51,
+    "exercise_id": 51,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 52,
+    "exercise_id": 52,
+    "muscle": "glutes"
+  },
+  {
+    "id": 53,
+    "exercise_id": 53,
+    "muscle": "chest"
+  },
+  {
+    "id": 54,
+    "exercise_id": 54,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 55,
+    "exercise_id": 55,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 56,
+    "exercise_id": 56,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 57,
+    "exercise_id": 57,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 58,
+    "exercise_id": 58,
+    "muscle": "calves"
+  },
+  {
+    "id": 59,
+    "exercise_id": 59,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 60,
+    "exercise_id": 60,
+    "muscle": "traps"
+  },
+  {
+    "id": 61,
+    "exercise_id": 61,
+    "muscle": "traps"
+  },
+  {
+    "id": 62,
+    "exercise_id": 62,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 63,
+    "exercise_id": 63,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 64,
+    "exercise_id": 64,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 65,
+    "exercise_id": 65,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 66,
+    "exercise_id": 66,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 67,
+    "exercise_id": 67,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 68,
+    "exercise_id": 68,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 69,
+    "exercise_id": 69,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 70,
+    "exercise_id": 70,
+    "muscle": "chest"
+  },
+  {
+    "id": 71,
+    "exercise_id": 71,
+    "muscle": "triceps"
+  },
+  {
+    "id": 72,
+    "exercise_id": 72,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 73,
+    "exercise_id": 73,
+    "muscle": "triceps"
+  },
+  {
+    "id": 74,
+    "exercise_id": 74,
+    "muscle": "chest"
+  },
+  {
+    "id": 75,
+    "exercise_id": 75,
+    "muscle": "triceps"
+  },
+  {
+    "id": 76,
+    "exercise_id": 76,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 77,
+    "exercise_id": 77,
+    "muscle": "lats"
+  },
+  {
+    "id": 78,
+    "exercise_id": 78,
+    "muscle": "chest"
+  },
+  {
+    "id": 79,
+    "exercise_id": 79,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 80,
+    "exercise_id": 80,
+    "muscle": "middle back"
+  },
+  {
+    "id": 81,
+    "exercise_id": 81,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 82,
+    "exercise_id": 82,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 83,
+    "exercise_id": 83,
+    "muscle": "middle back"
+  },
+  {
+    "id": 84,
+    "exercise_id": 84,
+    "muscle": "middle back"
+  },
+  {
+    "id": 85,
+    "exercise_id": 85,
+    "muscle": "middle back"
+  },
+  {
+    "id": 86,
+    "exercise_id": 86,
+    "muscle": "middle back"
+  },
+  {
+    "id": 87,
+    "exercise_id": 87,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 88,
+    "exercise_id": 88,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 89,
+    "exercise_id": 89,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 90,
+    "exercise_id": 90,
+    "muscle": "triceps"
+  },
+  {
+    "id": 91,
+    "exercise_id": 91,
+    "muscle": "triceps"
+  },
+  {
+    "id": 92,
+    "exercise_id": 92,
+    "muscle": "triceps"
+  },
+  {
+    "id": 93,
+    "exercise_id": 93,
+    "muscle": "chest"
+  },
+  {
+    "id": 94,
+    "exercise_id": 94,
+    "muscle": "middle back"
+  },
+  {
+    "id": 95,
+    "exercise_id": 95,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 96,
+    "exercise_id": 96,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 97,
+    "exercise_id": 97,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 98,
+    "exercise_id": 98,
+    "muscle": "forearms"
+  },
+  {
+    "id": 99,
+    "exercise_id": 99,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 100,
+    "exercise_id": 100,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 101,
+    "exercise_id": 101,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 102,
+    "exercise_id": 102,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 103,
+    "exercise_id": 103,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 104,
+    "exercise_id": 104,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 105,
+    "exercise_id": 105,
+    "muscle": "biceps"
+  },
+  {
+    "id": 106,
+    "exercise_id": 106,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 107,
+    "exercise_id": 107,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 108,
+    "exercise_id": 108,
+    "muscle": "glutes"
+  },
+  {
+    "id": 109,
+    "exercise_id": 109,
+    "muscle": "chest"
+  },
+  {
+    "id": 110,
+    "exercise_id": 110,
+    "muscle": "chest"
+  },
+  {
+    "id": 111,
+    "exercise_id": 111,
+    "muscle": "chest"
+  },
+  {
+    "id": 112,
+    "exercise_id": 112,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 113,
+    "exercise_id": 113,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 114,
+    "exercise_id": 114,
+    "muscle": "biceps"
+  },
+  {
+    "id": 115,
+    "exercise_id": 115,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 116,
+    "exercise_id": 116,
+    "muscle": "lats"
+  },
+  {
+    "id": 117,
+    "exercise_id": 117,
+    "muscle": "triceps"
+  },
+  {
+    "id": 118,
+    "exercise_id": 118,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 119,
+    "exercise_id": 119,
+    "muscle": "chest"
+  },
+  {
+    "id": 120,
+    "exercise_id": 120,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 121,
+    "exercise_id": 121,
+    "muscle": "triceps"
+  },
+  {
+    "id": 122,
+    "exercise_id": 122,
+    "muscle": "triceps"
+  },
+  {
+    "id": 123,
+    "exercise_id": 123,
+    "muscle": "biceps"
+  },
+  {
+    "id": 124,
+    "exercise_id": 124,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 125,
+    "exercise_id": 125,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 126,
+    "exercise_id": 126,
+    "muscle": "triceps"
+  },
+  {
+    "id": 127,
+    "exercise_id": 127,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 128,
+    "exercise_id": 128,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 129,
+    "exercise_id": 129,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 130,
+    "exercise_id": 130,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 131,
+    "exercise_id": 131,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 132,
+    "exercise_id": 132,
+    "muscle": "traps"
+  },
+  {
+    "id": 133,
+    "exercise_id": 133,
+    "muscle": "forearms"
+  },
+  {
+    "id": 134,
+    "exercise_id": 134,
+    "muscle": "traps"
+  },
+  {
+    "id": 135,
+    "exercise_id": 135,
+    "muscle": "calves"
+  },
+  {
+    "id": 136,
+    "exercise_id": 136,
+    "muscle": "calves"
+  },
+  {
+    "id": 137,
+    "exercise_id": 137,
+    "muscle": "calves"
+  },
+  {
+    "id": 138,
+    "exercise_id": 138,
+    "muscle": "calves"
+  },
+  {
+    "id": 139,
+    "exercise_id": 139,
+    "muscle": "calves"
+  },
+  {
+    "id": 140,
+    "exercise_id": 140,
+    "muscle": "calves"
+  },
+  {
+    "id": 141,
+    "exercise_id": 141,
+    "muscle": "calves"
+  },
+  {
+    "id": 142,
+    "exercise_id": 142,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 143,
+    "exercise_id": 143,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 144,
+    "exercise_id": 144,
+    "muscle": "adductors"
+  },
+  {
+    "id": 145,
+    "exercise_id": 145,
+    "muscle": "lower back"
+  },
+  {
+    "id": 146,
+    "exercise_id": 146,
+    "muscle": "lats"
+  },
+  {
+    "id": 147,
+    "exercise_id": 147,
+    "muscle": "triceps"
+  },
+  {
+    "id": 148,
+    "exercise_id": 148,
+    "muscle": "chest"
+  },
+  {
+    "id": 149,
+    "exercise_id": 149,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 150,
+    "exercise_id": 150,
+    "muscle": "lats"
+  },
+  {
+    "id": 151,
+    "exercise_id": 151,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 152,
+    "exercise_id": 152,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 153,
+    "exercise_id": 153,
+    "muscle": "chest"
+  },
+  {
+    "id": 154,
+    "exercise_id": 154,
+    "muscle": "chest"
+  },
+  {
+    "id": 155,
+    "exercise_id": 155,
+    "muscle": "chest"
+  },
+  {
+    "id": 156,
+    "exercise_id": 156,
+    "muscle": "chest"
+  },
+  {
+    "id": 157,
+    "exercise_id": 157,
+    "muscle": "chest"
+  },
+  {
+    "id": 158,
+    "exercise_id": 158,
+    "muscle": "chest"
+  },
+  {
+    "id": 159,
+    "exercise_id": 159,
+    "muscle": "lower back"
+  },
+  {
+    "id": 160,
+    "exercise_id": 160,
+    "muscle": "lats"
+  },
+  {
+    "id": 161,
+    "exercise_id": 161,
+    "muscle": "neck"
+  },
+  {
+    "id": 162,
+    "exercise_id": 162,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 163,
+    "exercise_id": 163,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 164,
+    "exercise_id": 164,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 165,
+    "exercise_id": 165,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 166,
+    "exercise_id": 166,
+    "muscle": "traps"
+  },
+  {
+    "id": 167,
+    "exercise_id": 167,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 168,
+    "exercise_id": 168,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 169,
+    "exercise_id": 169,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 170,
+    "exercise_id": 170,
+    "muscle": "chest"
+  },
+  {
+    "id": 171,
+    "exercise_id": 171,
+    "muscle": "triceps"
+  },
+  {
+    "id": 172,
+    "exercise_id": 172,
+    "muscle": "triceps"
+  },
+  {
+    "id": 173,
+    "exercise_id": 173,
+    "muscle": "biceps"
+  },
+  {
+    "id": 174,
+    "exercise_id": 174,
+    "muscle": "triceps"
+  },
+  {
+    "id": 175,
+    "exercise_id": 175,
+    "muscle": "biceps"
+  },
+  {
+    "id": 176,
+    "exercise_id": 176,
+    "muscle": "lats"
+  },
+  {
+    "id": 177,
+    "exercise_id": 177,
+    "muscle": "triceps"
+  },
+  {
+    "id": 178,
+    "exercise_id": 178,
+    "muscle": "biceps"
+  },
+  {
+    "id": 179,
+    "exercise_id": 179,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 180,
+    "exercise_id": 180,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 181,
+    "exercise_id": 181,
+    "muscle": "biceps"
+  },
+  {
+    "id": 182,
+    "exercise_id": 182,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 183,
+    "exercise_id": 183,
+    "muscle": "biceps"
+  },
+  {
+    "id": 184,
+    "exercise_id": 184,
+    "muscle": "chest"
+  },
+  {
+    "id": 185,
+    "exercise_id": 185,
+    "muscle": "lower back"
+  },
+  {
+    "id": 186,
+    "exercise_id": 186,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 187,
+    "exercise_id": 187,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 188,
+    "exercise_id": 188,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 189,
+    "exercise_id": 189,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 190,
+    "exercise_id": 190,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 191,
+    "exercise_id": 191,
+    "muscle": "lower back"
+  },
+  {
+    "id": 192,
+    "exercise_id": 192,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 193,
+    "exercise_id": 193,
+    "muscle": "lower back"
+  },
+  {
+    "id": 194,
+    "exercise_id": 194,
+    "muscle": "lower back"
+  },
+  {
+    "id": 195,
+    "exercise_id": 195,
+    "muscle": "chest"
+  },
+  {
+    "id": 196,
+    "exercise_id": 196,
+    "muscle": "triceps"
+  },
+  {
+    "id": 197,
+    "exercise_id": 197,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 198,
+    "exercise_id": 198,
+    "muscle": "chest"
+  },
+  {
+    "id": 199,
+    "exercise_id": 199,
+    "muscle": "chest"
+  },
+  {
+    "id": 200,
+    "exercise_id": 200,
+    "muscle": "triceps"
+  },
+  {
+    "id": 201,
+    "exercise_id": 201,
+    "muscle": "triceps"
+  },
+  {
+    "id": 202,
+    "exercise_id": 202,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 203,
+    "exercise_id": 203,
+    "muscle": "chest"
+  },
+  {
+    "id": 204,
+    "exercise_id": 204,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 205,
+    "exercise_id": 205,
+    "muscle": "chest"
+  },
+  {
+    "id": 206,
+    "exercise_id": 206,
+    "muscle": "lower back"
+  },
+  {
+    "id": 207,
+    "exercise_id": 207,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 208,
+    "exercise_id": 208,
+    "muscle": "triceps"
+  },
+  {
+    "id": 209,
+    "exercise_id": 209,
+    "muscle": "chest"
+  },
+  {
+    "id": 210,
+    "exercise_id": 210,
+    "muscle": "triceps"
+  },
+  {
+    "id": 211,
+    "exercise_id": 211,
+    "muscle": "calves"
+  },
+  {
+    "id": 212,
+    "exercise_id": 212,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 213,
+    "exercise_id": 213,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 214,
+    "exercise_id": 214,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 215,
+    "exercise_id": 215,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 216,
+    "exercise_id": 216,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 217,
+    "exercise_id": 217,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 218,
+    "exercise_id": 218,
+    "muscle": "glutes"
+  },
+  {
+    "id": 219,
+    "exercise_id": 219,
+    "muscle": "biceps"
+  },
+  {
+    "id": 220,
+    "exercise_id": 220,
+    "muscle": "chest"
+  },
+  {
+    "id": 221,
+    "exercise_id": 221,
+    "muscle": "biceps"
+  },
+  {
+    "id": 222,
+    "exercise_id": 222,
+    "muscle": "chest"
+  },
+  {
+    "id": 223,
+    "exercise_id": 223,
+    "muscle": "chest"
+  },
+  {
+    "id": 224,
+    "exercise_id": 224,
+    "muscle": "biceps"
+  },
+  {
+    "id": 225,
+    "exercise_id": 225,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 226,
+    "exercise_id": 226,
+    "muscle": "triceps"
+  },
+  {
+    "id": 227,
+    "exercise_id": 227,
+    "muscle": "chest"
+  },
+  {
+    "id": 228,
+    "exercise_id": 228,
+    "muscle": "middle back"
+  },
+  {
+    "id": 229,
+    "exercise_id": 229,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 230,
+    "exercise_id": 230,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 231,
+    "exercise_id": 231,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 232,
+    "exercise_id": 232,
+    "muscle": "forearms"
+  },
+  {
+    "id": 233,
+    "exercise_id": 233,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 234,
+    "exercise_id": 234,
+    "muscle": "forearms"
+  },
+  {
+    "id": 235,
+    "exercise_id": 235,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 236,
+    "exercise_id": 236,
+    "muscle": "triceps"
+  },
+  {
+    "id": 237,
+    "exercise_id": 237,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 238,
+    "exercise_id": 238,
+    "muscle": "biceps"
+  },
+  {
+    "id": 239,
+    "exercise_id": 239,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 240,
+    "exercise_id": 240,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 241,
+    "exercise_id": 241,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 242,
+    "exercise_id": 242,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 243,
+    "exercise_id": 243,
+    "muscle": "calves"
+  },
+  {
+    "id": 244,
+    "exercise_id": 244,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 245,
+    "exercise_id": 245,
+    "muscle": "traps"
+  },
+  {
+    "id": 246,
+    "exercise_id": 246,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 247,
+    "exercise_id": 247,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 248,
+    "exercise_id": 248,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 249,
+    "exercise_id": 249,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 250,
+    "exercise_id": 250,
+    "muscle": "triceps"
+  },
+  {
+    "id": 251,
+    "exercise_id": 251,
+    "muscle": "lats"
+  },
+  {
+    "id": 252,
+    "exercise_id": 252,
+    "muscle": "chest"
+  },
+  {
+    "id": 253,
+    "exercise_id": 253,
+    "muscle": "biceps"
+  },
+  {
+    "id": 254,
+    "exercise_id": 254,
+    "muscle": "triceps"
+  },
+  {
+    "id": 255,
+    "exercise_id": 255,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 256,
+    "exercise_id": 256,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 257,
+    "exercise_id": 257,
+    "muscle": "chest"
+  },
+  {
+    "id": 258,
+    "exercise_id": 258,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 259,
+    "exercise_id": 259,
+    "muscle": "lats"
+  },
+  {
+    "id": 260,
+    "exercise_id": 260,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 261,
+    "exercise_id": 261,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 262,
+    "exercise_id": 262,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 263,
+    "exercise_id": 263,
+    "muscle": "chest"
+  },
+  {
+    "id": 264,
+    "exercise_id": 264,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 265,
+    "exercise_id": 265,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 266,
+    "exercise_id": 266,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 267,
+    "exercise_id": 267,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 268,
+    "exercise_id": 268,
+    "muscle": "forearms"
+  },
+  {
+    "id": 269,
+    "exercise_id": 269,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 270,
+    "exercise_id": 270,
+    "muscle": "forearms"
+  },
+  {
+    "id": 271,
+    "exercise_id": 271,
+    "muscle": "chest"
+  },
+  {
+    "id": 272,
+    "exercise_id": 272,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 273,
+    "exercise_id": 273,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 274,
+    "exercise_id": 274,
+    "muscle": "biceps"
+  },
+  {
+    "id": 275,
+    "exercise_id": 275,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 276,
+    "exercise_id": 276,
+    "muscle": "triceps"
+  },
+  {
+    "id": 277,
+    "exercise_id": 277,
+    "muscle": "triceps"
+  },
+  {
+    "id": 278,
+    "exercise_id": 278,
+    "muscle": "glutes"
+  },
+  {
+    "id": 279,
+    "exercise_id": 279,
+    "muscle": "calves"
+  },
+  {
+    "id": 280,
+    "exercise_id": 280,
+    "muscle": "chest"
+  },
+  {
+    "id": 281,
+    "exercise_id": 281,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 282,
+    "exercise_id": 282,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 283,
+    "exercise_id": 283,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 284,
+    "exercise_id": 284,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 285,
+    "exercise_id": 285,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 286,
+    "exercise_id": 286,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 287,
+    "exercise_id": 287,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 288,
+    "exercise_id": 288,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 289,
+    "exercise_id": 289,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 290,
+    "exercise_id": 290,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 291,
+    "exercise_id": 291,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 292,
+    "exercise_id": 292,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 293,
+    "exercise_id": 293,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 294,
+    "exercise_id": 294,
+    "muscle": "chest"
+  },
+  {
+    "id": 295,
+    "exercise_id": 295,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 296,
+    "exercise_id": 296,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 297,
+    "exercise_id": 297,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 298,
+    "exercise_id": 298,
+    "muscle": "lats"
+  },
+  {
+    "id": 299,
+    "exercise_id": 299,
+    "muscle": "lats"
+  },
+  {
+    "id": 300,
+    "exercise_id": 300,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 301,
+    "exercise_id": 301,
+    "muscle": "glutes"
+  },
+  {
+    "id": 302,
+    "exercise_id": 302,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 303,
+    "exercise_id": 303,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 304,
+    "exercise_id": 304,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 305,
+    "exercise_id": 305,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 306,
+    "exercise_id": 306,
+    "muscle": "adductors"
+  },
+  {
+    "id": 307,
+    "exercise_id": 307,
+    "muscle": "adductors"
+  },
+  {
+    "id": 308,
+    "exercise_id": 308,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 309,
+    "exercise_id": 309,
+    "muscle": "biceps"
+  },
+  {
+    "id": 310,
+    "exercise_id": 310,
+    "muscle": "chest"
+  },
+  {
+    "id": 311,
+    "exercise_id": 311,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 312,
+    "exercise_id": 312,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 313,
+    "exercise_id": 313,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 314,
+    "exercise_id": 314,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 315,
+    "exercise_id": 315,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 316,
+    "exercise_id": 316,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 317,
+    "exercise_id": 317,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 318,
+    "exercise_id": 318,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 319,
+    "exercise_id": 319,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 320,
+    "exercise_id": 320,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 321,
+    "exercise_id": 321,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 322,
+    "exercise_id": 322,
+    "muscle": "chest"
+  },
+  {
+    "id": 323,
+    "exercise_id": 323,
+    "muscle": "biceps"
+  },
+  {
+    "id": 324,
+    "exercise_id": 324,
+    "muscle": "abductors"
+  },
+  {
+    "id": 325,
+    "exercise_id": 325,
+    "muscle": "glutes"
+  },
+  {
+    "id": 326,
+    "exercise_id": 326,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 327,
+    "exercise_id": 327,
+    "muscle": "glutes"
+  },
+  {
+    "id": 328,
+    "exercise_id": 328,
+    "muscle": "lower back"
+  },
+  {
+    "id": 329,
+    "exercise_id": 329,
+    "muscle": "lower back"
+  },
+  {
+    "id": 330,
+    "exercise_id": 330,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 331,
+    "exercise_id": 331,
+    "muscle": "lower back"
+  },
+  {
+    "id": 332,
+    "exercise_id": 332,
+    "muscle": "lower back"
+  },
+  {
+    "id": 333,
+    "exercise_id": 333,
+    "muscle": "abductors"
+  },
+  {
+    "id": 334,
+    "exercise_id": 334,
+    "muscle": "abductors"
+  },
+  {
+    "id": 335,
+    "exercise_id": 335,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 336,
+    "exercise_id": 336,
+    "muscle": "triceps"
+  },
+  {
+    "id": 337,
+    "exercise_id": 337,
+    "muscle": "middle back"
+  },
+  {
+    "id": 338,
+    "exercise_id": 338,
+    "muscle": "chest"
+  },
+  {
+    "id": 339,
+    "exercise_id": 339,
+    "muscle": "chest"
+  },
+  {
+    "id": 340,
+    "exercise_id": 340,
+    "muscle": "chest"
+  },
+  {
+    "id": 341,
+    "exercise_id": 341,
+    "muscle": "biceps"
+  },
+  {
+    "id": 342,
+    "exercise_id": 342,
+    "muscle": "chest"
+  },
+  {
+    "id": 343,
+    "exercise_id": 343,
+    "muscle": "chest"
+  },
+  {
+    "id": 344,
+    "exercise_id": 344,
+    "muscle": "chest"
+  },
+  {
+    "id": 345,
+    "exercise_id": 345,
+    "muscle": "biceps"
+  },
+  {
+    "id": 346,
+    "exercise_id": 346,
+    "muscle": "biceps"
+  },
+  {
+    "id": 347,
+    "exercise_id": 347,
+    "muscle": "chest"
+  },
+  {
+    "id": 348,
+    "exercise_id": 348,
+    "muscle": "triceps"
+  },
+  {
+    "id": 349,
+    "exercise_id": 349,
+    "muscle": "chest"
+  },
+  {
+    "id": 350,
+    "exercise_id": 350,
+    "muscle": "chest"
+  },
+  {
+    "id": 351,
+    "exercise_id": 351,
+    "muscle": "chest"
+  },
+  {
+    "id": 352,
+    "exercise_id": 352,
+    "muscle": "chest"
+  },
+  {
+    "id": 353,
+    "exercise_id": 353,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 354,
+    "exercise_id": 354,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 355,
+    "exercise_id": 355,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 356,
+    "exercise_id": 356,
+    "muscle": "middle back"
+  },
+  {
+    "id": 357,
+    "exercise_id": 357,
+    "muscle": "middle back"
+  },
+  {
+    "id": 358,
+    "exercise_id": 358,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 359,
+    "exercise_id": 359,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 360,
+    "exercise_id": 360,
+    "muscle": "chest"
+  },
+  {
+    "id": 361,
+    "exercise_id": 361,
+    "muscle": "neck"
+  },
+  {
+    "id": 362,
+    "exercise_id": 362,
+    "muscle": "neck"
+  },
+  {
+    "id": 363,
+    "exercise_id": 363,
+    "muscle": "chest"
+  },
+  {
+    "id": 364,
+    "exercise_id": 364,
+    "muscle": "triceps"
+  },
+  {
+    "id": 365,
+    "exercise_id": 365,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 366,
+    "exercise_id": 366,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 367,
+    "exercise_id": 367,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 368,
+    "exercise_id": 368,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 369,
+    "exercise_id": 369,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 370,
+    "exercise_id": 370,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 371,
+    "exercise_id": 371,
+    "muscle": "lower back"
+  },
+  {
+    "id": 372,
+    "exercise_id": 372,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 373,
+    "exercise_id": 373,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 374,
+    "exercise_id": 374,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 375,
+    "exercise_id": 375,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 376,
+    "exercise_id": 376,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 377,
+    "exercise_id": 377,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 378,
+    "exercise_id": 378,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 379,
+    "exercise_id": 379,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 380,
+    "exercise_id": 380,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 381,
+    "exercise_id": 381,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 382,
+    "exercise_id": 382,
+    "muscle": "traps"
+  },
+  {
+    "id": 383,
+    "exercise_id": 383,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 384,
+    "exercise_id": 384,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 385,
+    "exercise_id": 385,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 386,
+    "exercise_id": 386,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 387,
+    "exercise_id": 387,
+    "muscle": "lats"
+  },
+  {
+    "id": 388,
+    "exercise_id": 388,
+    "muscle": "glutes"
+  },
+  {
+    "id": 389,
+    "exercise_id": 389,
+    "muscle": "calves"
+  },
+  {
+    "id": 390,
+    "exercise_id": 390,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 391,
+    "exercise_id": 391,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 392,
+    "exercise_id": 392,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 393,
+    "exercise_id": 393,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 394,
+    "exercise_id": 394,
+    "muscle": "triceps"
+  },
+  {
+    "id": 395,
+    "exercise_id": 395,
+    "muscle": "forearms"
+  },
+  {
+    "id": 396,
+    "exercise_id": 396,
+    "muscle": "lats"
+  },
+  {
+    "id": 397,
+    "exercise_id": 397,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 398,
+    "exercise_id": 398,
+    "muscle": "glutes"
+  },
+  {
+    "id": 399,
+    "exercise_id": 399,
+    "muscle": "lats"
+  },
+  {
+    "id": 400,
+    "exercise_id": 400,
+    "muscle": "glutes"
+  },
+  {
+    "id": 401,
+    "exercise_id": 401,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 402,
+    "exercise_id": 402,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 403,
+    "exercise_id": 403,
+    "muscle": "adductors"
+  },
+  {
+    "id": 404,
+    "exercise_id": 404,
+    "muscle": "adductors"
+  },
+  {
+    "id": 405,
+    "exercise_id": 405,
+    "muscle": "adductors"
+  },
+  {
+    "id": 406,
+    "exercise_id": 406,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 407,
+    "exercise_id": 407,
+    "muscle": "lats"
+  },
+  {
+    "id": 408,
+    "exercise_id": 408,
+    "muscle": "chest"
+  },
+  {
+    "id": 409,
+    "exercise_id": 409,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 410,
+    "exercise_id": 410,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 411,
+    "exercise_id": 411,
+    "muscle": "glutes"
+  },
+  {
+    "id": 412,
+    "exercise_id": 412,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 413,
+    "exercise_id": 413,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 414,
+    "exercise_id": 414,
+    "muscle": "chest"
+  },
+  {
+    "id": 415,
+    "exercise_id": 415,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 416,
+    "exercise_id": 416,
+    "muscle": "chest"
+  },
+  {
+    "id": 417,
+    "exercise_id": 417,
+    "muscle": "middle back"
+  },
+  {
+    "id": 418,
+    "exercise_id": 418,
+    "muscle": "chest"
+  },
+  {
+    "id": 419,
+    "exercise_id": 419,
+    "muscle": "lats"
+  },
+  {
+    "id": 420,
+    "exercise_id": 420,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 421,
+    "exercise_id": 421,
+    "muscle": "traps"
+  },
+  {
+    "id": 422,
+    "exercise_id": 422,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 423,
+    "exercise_id": 423,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 424,
+    "exercise_id": 424,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 425,
+    "exercise_id": 425,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 426,
+    "exercise_id": 426,
+    "muscle": "lats"
+  },
+  {
+    "id": 427,
+    "exercise_id": 427,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 428,
+    "exercise_id": 428,
+    "muscle": "chest"
+  },
+  {
+    "id": 429,
+    "exercise_id": 429,
+    "muscle": "triceps"
+  },
+  {
+    "id": 430,
+    "exercise_id": 430,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 431,
+    "exercise_id": 431,
+    "muscle": "lower back"
+  },
+  {
+    "id": 432,
+    "exercise_id": 432,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 433,
+    "exercise_id": 433,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 434,
+    "exercise_id": 434,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 435,
+    "exercise_id": 435,
+    "muscle": "adductors"
+  },
+  {
+    "id": 436,
+    "exercise_id": 436,
+    "muscle": "biceps"
+  },
+  {
+    "id": 437,
+    "exercise_id": 437,
+    "muscle": "middle back"
+  },
+  {
+    "id": 438,
+    "exercise_id": 438,
+    "muscle": "biceps"
+  },
+  {
+    "id": 439,
+    "exercise_id": 439,
+    "muscle": "triceps"
+  },
+  {
+    "id": 440,
+    "exercise_id": 440,
+    "muscle": "triceps"
+  },
+  {
+    "id": 441,
+    "exercise_id": 441,
+    "muscle": "abductors"
+  },
+  {
+    "id": 442,
+    "exercise_id": 442,
+    "muscle": "triceps"
+  },
+  {
+    "id": 443,
+    "exercise_id": 443,
+    "muscle": "neck"
+  },
+  {
+    "id": 444,
+    "exercise_id": 444,
+    "muscle": "neck"
+  },
+  {
+    "id": 445,
+    "exercise_id": 445,
+    "muscle": "glutes"
+  },
+  {
+    "id": 446,
+    "exercise_id": 446,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 447,
+    "exercise_id": 447,
+    "muscle": "biceps"
+  },
+  {
+    "id": 448,
+    "exercise_id": 448,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 449,
+    "exercise_id": 449,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 450,
+    "exercise_id": 450,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 451,
+    "exercise_id": 451,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 452,
+    "exercise_id": 452,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 453,
+    "exercise_id": 453,
+    "muscle": "biceps"
+  },
+  {
+    "id": 454,
+    "exercise_id": 454,
+    "muscle": "middle back"
+  },
+  {
+    "id": 455,
+    "exercise_id": 455,
+    "muscle": "triceps"
+  },
+  {
+    "id": 456,
+    "exercise_id": 456,
+    "muscle": "chest"
+  },
+  {
+    "id": 457,
+    "exercise_id": 457,
+    "muscle": "biceps"
+  },
+  {
+    "id": 458,
+    "exercise_id": 458,
+    "muscle": "biceps"
+  },
+  {
+    "id": 459,
+    "exercise_id": 459,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 460,
+    "exercise_id": 460,
+    "muscle": "triceps"
+  },
+  {
+    "id": 461,
+    "exercise_id": 461,
+    "muscle": "chest"
+  },
+  {
+    "id": 462,
+    "exercise_id": 462,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 463,
+    "exercise_id": 463,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 464,
+    "exercise_id": 464,
+    "muscle": "middle back"
+  },
+  {
+    "id": 465,
+    "exercise_id": 465,
+    "muscle": "middle back"
+  },
+  {
+    "id": 466,
+    "exercise_id": 466,
+    "muscle": "middle back"
+  },
+  {
+    "id": 467,
+    "exercise_id": 467,
+    "muscle": "abductors"
+  },
+  {
+    "id": 468,
+    "exercise_id": 468,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 469,
+    "exercise_id": 469,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 470,
+    "exercise_id": 470,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 471,
+    "exercise_id": 471,
+    "muscle": "lats"
+  },
+  {
+    "id": 472,
+    "exercise_id": 472,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 473,
+    "exercise_id": 473,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 474,
+    "exercise_id": 474,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 475,
+    "exercise_id": 475,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 476,
+    "exercise_id": 476,
+    "muscle": "neck"
+  },
+  {
+    "id": 477,
+    "exercise_id": 477,
+    "muscle": "chest"
+  },
+  {
+    "id": 478,
+    "exercise_id": 478,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 479,
+    "exercise_id": 479,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 480,
+    "exercise_id": 480,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 481,
+    "exercise_id": 481,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 482,
+    "exercise_id": 482,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 483,
+    "exercise_id": 483,
+    "muscle": "middle back"
+  },
+  {
+    "id": 484,
+    "exercise_id": 484,
+    "muscle": "chest"
+  },
+  {
+    "id": 485,
+    "exercise_id": 485,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 486,
+    "exercise_id": 486,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 487,
+    "exercise_id": 487,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 488,
+    "exercise_id": 488,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 489,
+    "exercise_id": 489,
+    "muscle": "chest"
+  },
+  {
+    "id": 490,
+    "exercise_id": 490,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 491,
+    "exercise_id": 491,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 492,
+    "exercise_id": 492,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 493,
+    "exercise_id": 493,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 494,
+    "exercise_id": 494,
+    "muscle": "middle back"
+  },
+  {
+    "id": 495,
+    "exercise_id": 495,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 496,
+    "exercise_id": 496,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 497,
+    "exercise_id": 497,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 498,
+    "exercise_id": 498,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 499,
+    "exercise_id": 499,
+    "muscle": "middle back"
+  },
+  {
+    "id": 500,
+    "exercise_id": 500,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 501,
+    "exercise_id": 501,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 502,
+    "exercise_id": 502,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 503,
+    "exercise_id": 503,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 504,
+    "exercise_id": 504,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 505,
+    "exercise_id": 505,
+    "muscle": "glutes"
+  },
+  {
+    "id": 506,
+    "exercise_id": 506,
+    "muscle": "lats"
+  },
+  {
+    "id": 507,
+    "exercise_id": 507,
+    "muscle": "middle back"
+  },
+  {
+    "id": 508,
+    "exercise_id": 508,
+    "muscle": "chest"
+  },
+  {
+    "id": 509,
+    "exercise_id": 509,
+    "muscle": "biceps"
+  },
+  {
+    "id": 510,
+    "exercise_id": 510,
+    "muscle": "triceps"
+  },
+  {
+    "id": 511,
+    "exercise_id": 511,
+    "muscle": "lats"
+  },
+  {
+    "id": 512,
+    "exercise_id": 512,
+    "muscle": "triceps"
+  },
+  {
+    "id": 513,
+    "exercise_id": 513,
+    "muscle": "triceps"
+  },
+  {
+    "id": 514,
+    "exercise_id": 514,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 515,
+    "exercise_id": 515,
+    "muscle": "lats"
+  },
+  {
+    "id": 516,
+    "exercise_id": 516,
+    "muscle": "glutes"
+  },
+  {
+    "id": 517,
+    "exercise_id": 517,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 518,
+    "exercise_id": 518,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 519,
+    "exercise_id": 519,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 520,
+    "exercise_id": 520,
+    "muscle": "biceps"
+  },
+  {
+    "id": 521,
+    "exercise_id": 521,
+    "muscle": "lats"
+  },
+  {
+    "id": 522,
+    "exercise_id": 522,
+    "muscle": "lats"
+  },
+  {
+    "id": 523,
+    "exercise_id": 523,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 524,
+    "exercise_id": 524,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 525,
+    "exercise_id": 525,
+    "muscle": "triceps"
+  },
+  {
+    "id": 526,
+    "exercise_id": 526,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 527,
+    "exercise_id": 527,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 528,
+    "exercise_id": 528,
+    "muscle": "forearms"
+  },
+  {
+    "id": 529,
+    "exercise_id": 529,
+    "muscle": "forearms"
+  },
+  {
+    "id": 530,
+    "exercise_id": 530,
+    "muscle": "forearms"
+  },
+  {
+    "id": 531,
+    "exercise_id": 531,
+    "muscle": "forearms"
+  },
+  {
+    "id": 532,
+    "exercise_id": 532,
+    "muscle": "triceps"
+  },
+  {
+    "id": 533,
+    "exercise_id": 533,
+    "muscle": "lower back"
+  },
+  {
+    "id": 534,
+    "exercise_id": 534,
+    "muscle": "calves"
+  },
+  {
+    "id": 535,
+    "exercise_id": 535,
+    "muscle": "calves"
+  },
+  {
+    "id": 536,
+    "exercise_id": 536,
+    "muscle": "glutes"
+  },
+  {
+    "id": 537,
+    "exercise_id": 537,
+    "muscle": "triceps"
+  },
+  {
+    "id": 538,
+    "exercise_id": 538,
+    "muscle": "glutes"
+  },
+  {
+    "id": 539,
+    "exercise_id": 539,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 540,
+    "exercise_id": 540,
+    "muscle": "forearms"
+  },
+  {
+    "id": 541,
+    "exercise_id": 541,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 542,
+    "exercise_id": 542,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 543,
+    "exercise_id": 543,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 544,
+    "exercise_id": 544,
+    "muscle": "chest"
+  },
+  {
+    "id": 545,
+    "exercise_id": 545,
+    "muscle": "chest"
+  },
+  {
+    "id": 546,
+    "exercise_id": 546,
+    "muscle": "calves"
+  },
+  {
+    "id": 547,
+    "exercise_id": 547,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 548,
+    "exercise_id": 548,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 549,
+    "exercise_id": 549,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 550,
+    "exercise_id": 550,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 551,
+    "exercise_id": 551,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 552,
+    "exercise_id": 552,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 553,
+    "exercise_id": 553,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 554,
+    "exercise_id": 554,
+    "muscle": "biceps"
+  },
+  {
+    "id": 555,
+    "exercise_id": 555,
+    "muscle": "biceps"
+  },
+  {
+    "id": 556,
+    "exercise_id": 556,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 557,
+    "exercise_id": 557,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 558,
+    "exercise_id": 558,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 559,
+    "exercise_id": 559,
+    "muscle": "glutes"
+  },
+  {
+    "id": 560,
+    "exercise_id": 560,
+    "muscle": "lats"
+  },
+  {
+    "id": 561,
+    "exercise_id": 561,
+    "muscle": "chest"
+  },
+  {
+    "id": 562,
+    "exercise_id": 562,
+    "muscle": "triceps"
+  },
+  {
+    "id": 563,
+    "exercise_id": 563,
+    "muscle": "chest"
+  },
+  {
+    "id": 564,
+    "exercise_id": 564,
+    "muscle": "chest"
+  },
+  {
+    "id": 565,
+    "exercise_id": 565,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 566,
+    "exercise_id": 566,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 567,
+    "exercise_id": 567,
+    "muscle": "chest"
+  },
+  {
+    "id": 568,
+    "exercise_id": 568,
+    "muscle": "chest"
+  },
+  {
+    "id": 569,
+    "exercise_id": 569,
+    "muscle": "chest"
+  },
+  {
+    "id": 570,
+    "exercise_id": 570,
+    "muscle": "lower back"
+  },
+  {
+    "id": 571,
+    "exercise_id": 571,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 572,
+    "exercise_id": 572,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 573,
+    "exercise_id": 573,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 574,
+    "exercise_id": 574,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 575,
+    "exercise_id": 575,
+    "muscle": "lower back"
+  },
+  {
+    "id": 576,
+    "exercise_id": 576,
+    "muscle": "lower back"
+  },
+  {
+    "id": 577,
+    "exercise_id": 577,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 578,
+    "exercise_id": 578,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 579,
+    "exercise_id": 579,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 580,
+    "exercise_id": 580,
+    "muscle": "triceps"
+  },
+  {
+    "id": 581,
+    "exercise_id": 581,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 582,
+    "exercise_id": 582,
+    "muscle": "lower back"
+  },
+  {
+    "id": 583,
+    "exercise_id": 583,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 584,
+    "exercise_id": 584,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 585,
+    "exercise_id": 585,
+    "muscle": "biceps"
+  },
+  {
+    "id": 586,
+    "exercise_id": 586,
+    "muscle": "biceps"
+  },
+  {
+    "id": 587,
+    "exercise_id": 587,
+    "muscle": "biceps"
+  },
+  {
+    "id": 588,
+    "exercise_id": 588,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 589,
+    "exercise_id": 589,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 590,
+    "exercise_id": 590,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 591,
+    "exercise_id": 591,
+    "muscle": "middle back"
+  },
+  {
+    "id": 592,
+    "exercise_id": 592,
+    "muscle": "triceps"
+  },
+  {
+    "id": 593,
+    "exercise_id": 593,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 594,
+    "exercise_id": 594,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 595,
+    "exercise_id": 595,
+    "muscle": "biceps"
+  },
+  {
+    "id": 596,
+    "exercise_id": 596,
+    "muscle": "triceps"
+  },
+  {
+    "id": 597,
+    "exercise_id": 597,
+    "muscle": "middle back"
+  },
+  {
+    "id": 598,
+    "exercise_id": 598,
+    "muscle": "forearms"
+  },
+  {
+    "id": 599,
+    "exercise_id": 599,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 600,
+    "exercise_id": 600,
+    "muscle": "triceps"
+  },
+  {
+    "id": 601,
+    "exercise_id": 601,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 602,
+    "exercise_id": 602,
+    "muscle": "calves"
+  },
+  {
+    "id": 603,
+    "exercise_id": 603,
+    "muscle": "lats"
+  },
+  {
+    "id": 604,
+    "exercise_id": 604,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 605,
+    "exercise_id": 605,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 606,
+    "exercise_id": 606,
+    "muscle": "lats"
+  },
+  {
+    "id": 607,
+    "exercise_id": 607,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 608,
+    "exercise_id": 608,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 609,
+    "exercise_id": 609,
+    "muscle": "lats"
+  },
+  {
+    "id": 610,
+    "exercise_id": 610,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 611,
+    "exercise_id": 611,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 612,
+    "exercise_id": 612,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 613,
+    "exercise_id": 613,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 614,
+    "exercise_id": 614,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 615,
+    "exercise_id": 615,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 616,
+    "exercise_id": 616,
+    "muscle": "traps"
+  },
+  {
+    "id": 617,
+    "exercise_id": 617,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 618,
+    "exercise_id": 618,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 619,
+    "exercise_id": 619,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 620,
+    "exercise_id": 620,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 621,
+    "exercise_id": 621,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 622,
+    "exercise_id": 622,
+    "muscle": "triceps"
+  },
+  {
+    "id": 623,
+    "exercise_id": 623,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 624,
+    "exercise_id": 624,
+    "muscle": "triceps"
+  },
+  {
+    "id": 625,
+    "exercise_id": 625,
+    "muscle": "biceps"
+  },
+  {
+    "id": 626,
+    "exercise_id": 626,
+    "muscle": "middle back"
+  },
+  {
+    "id": 627,
+    "exercise_id": 627,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 628,
+    "exercise_id": 628,
+    "muscle": "calves"
+  },
+  {
+    "id": 629,
+    "exercise_id": 629,
+    "muscle": "calves"
+  },
+  {
+    "id": 630,
+    "exercise_id": 630,
+    "muscle": "biceps"
+  },
+  {
+    "id": 631,
+    "exercise_id": 631,
+    "muscle": "biceps"
+  },
+  {
+    "id": 632,
+    "exercise_id": 632,
+    "muscle": "biceps"
+  },
+  {
+    "id": 633,
+    "exercise_id": 633,
+    "muscle": "forearms"
+  },
+  {
+    "id": 634,
+    "exercise_id": 634,
+    "muscle": "forearms"
+  },
+  {
+    "id": 635,
+    "exercise_id": 635,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 636,
+    "exercise_id": 636,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 637,
+    "exercise_id": 637,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 638,
+    "exercise_id": 638,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 639,
+    "exercise_id": 639,
+    "muscle": "glutes"
+  },
+  {
+    "id": 640,
+    "exercise_id": 640,
+    "muscle": "lower back"
+  },
+  {
+    "id": 641,
+    "exercise_id": 641,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 642,
+    "exercise_id": 642,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 643,
+    "exercise_id": 643,
+    "muscle": "neck"
+  },
+  {
+    "id": 644,
+    "exercise_id": 644,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 645,
+    "exercise_id": 645,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 646,
+    "exercise_id": 646,
+    "muscle": "forearms"
+  },
+  {
+    "id": 647,
+    "exercise_id": 647,
+    "muscle": "forearms"
+  },
+  {
+    "id": 648,
+    "exercise_id": 648,
+    "muscle": "middle back"
+  },
+  {
+    "id": 649,
+    "exercise_id": 649,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 650,
+    "exercise_id": 650,
+    "muscle": "forearms"
+  },
+  {
+    "id": 651,
+    "exercise_id": 651,
+    "muscle": "forearms"
+  },
+  {
+    "id": 652,
+    "exercise_id": 652,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 653,
+    "exercise_id": 653,
+    "muscle": "triceps"
+  },
+  {
+    "id": 654,
+    "exercise_id": 654,
+    "muscle": "forearms"
+  },
+  {
+    "id": 655,
+    "exercise_id": 655,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 656,
+    "exercise_id": 656,
+    "muscle": "lats"
+  },
+  {
+    "id": 657,
+    "exercise_id": 657,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 658,
+    "exercise_id": 658,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 659,
+    "exercise_id": 659,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 660,
+    "exercise_id": 660,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 661,
+    "exercise_id": 661,
+    "muscle": "lats"
+  },
+  {
+    "id": 662,
+    "exercise_id": 662,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 663,
+    "exercise_id": 663,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 664,
+    "exercise_id": 664,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 665,
+    "exercise_id": 665,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 666,
+    "exercise_id": 666,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 667,
+    "exercise_id": 667,
+    "muscle": "adductors"
+  },
+  {
+    "id": 668,
+    "exercise_id": 668,
+    "muscle": "adductors"
+  },
+  {
+    "id": 669,
+    "exercise_id": 669,
+    "muscle": "neck"
+  },
+  {
+    "id": 670,
+    "exercise_id": 670,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 671,
+    "exercise_id": 671,
+    "muscle": "lats"
+  },
+  {
+    "id": 672,
+    "exercise_id": 672,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 673,
+    "exercise_id": 673,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 674,
+    "exercise_id": 674,
+    "muscle": "chest"
+  },
+  {
+    "id": 675,
+    "exercise_id": 675,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 676,
+    "exercise_id": 676,
+    "muscle": "chest"
+  },
+  {
+    "id": 677,
+    "exercise_id": 677,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 678,
+    "exercise_id": 678,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 679,
+    "exercise_id": 679,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 680,
+    "exercise_id": 680,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 681,
+    "exercise_id": 681,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 682,
+    "exercise_id": 682,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 683,
+    "exercise_id": 683,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 684,
+    "exercise_id": 684,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 685,
+    "exercise_id": 685,
+    "muscle": "glutes"
+  },
+  {
+    "id": 686,
+    "exercise_id": 686,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 687,
+    "exercise_id": 687,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 688,
+    "exercise_id": 688,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 689,
+    "exercise_id": 689,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 690,
+    "exercise_id": 690,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 691,
+    "exercise_id": 691,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 692,
+    "exercise_id": 692,
+    "muscle": "triceps"
+  },
+  {
+    "id": 693,
+    "exercise_id": 693,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 694,
+    "exercise_id": 694,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 695,
+    "exercise_id": 695,
+    "muscle": "middle back"
+  },
+  {
+    "id": 696,
+    "exercise_id": 696,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 697,
+    "exercise_id": 697,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 698,
+    "exercise_id": 698,
+    "muscle": "traps"
+  },
+  {
+    "id": 699,
+    "exercise_id": 699,
+    "muscle": "chest"
+  },
+  {
+    "id": 700,
+    "exercise_id": 700,
+    "muscle": "middle back"
+  },
+  {
+    "id": 701,
+    "exercise_id": 701,
+    "muscle": "calves"
+  },
+  {
+    "id": 702,
+    "exercise_id": 702,
+    "muscle": "triceps"
+  },
+  {
+    "id": 703,
+    "exercise_id": 703,
+    "muscle": "chest"
+  },
+  {
+    "id": 704,
+    "exercise_id": 704,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 705,
+    "exercise_id": 705,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 706,
+    "exercise_id": 706,
+    "muscle": "chest"
+  },
+  {
+    "id": 707,
+    "exercise_id": 707,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 708,
+    "exercise_id": 708,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 709,
+    "exercise_id": 709,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 710,
+    "exercise_id": 710,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 711,
+    "exercise_id": 711,
+    "muscle": "calves"
+  },
+  {
+    "id": 712,
+    "exercise_id": 712,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 713,
+    "exercise_id": 713,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 714,
+    "exercise_id": 714,
+    "muscle": "traps"
+  },
+  {
+    "id": 715,
+    "exercise_id": 715,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 716,
+    "exercise_id": 716,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 717,
+    "exercise_id": 717,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 718,
+    "exercise_id": 718,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 719,
+    "exercise_id": 719,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 720,
+    "exercise_id": 720,
+    "muscle": "traps"
+  },
+  {
+    "id": 721,
+    "exercise_id": 721,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 722,
+    "exercise_id": 722,
+    "muscle": "triceps"
+  },
+  {
+    "id": 723,
+    "exercise_id": 723,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 724,
+    "exercise_id": 724,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 725,
+    "exercise_id": 725,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 726,
+    "exercise_id": 726,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 727,
+    "exercise_id": 727,
+    "muscle": "biceps"
+  },
+  {
+    "id": 728,
+    "exercise_id": 728,
+    "muscle": "middle back"
+  },
+  {
+    "id": 729,
+    "exercise_id": 729,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 730,
+    "exercise_id": 730,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 731,
+    "exercise_id": 731,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 732,
+    "exercise_id": 732,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 733,
+    "exercise_id": 733,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 734,
+    "exercise_id": 734,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 735,
+    "exercise_id": 735,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 736,
+    "exercise_id": 736,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 737,
+    "exercise_id": 737,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 738,
+    "exercise_id": 738,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 739,
+    "exercise_id": 739,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 740,
+    "exercise_id": 740,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 741,
+    "exercise_id": 741,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 742,
+    "exercise_id": 742,
+    "muscle": "calves"
+  },
+  {
+    "id": 743,
+    "exercise_id": 743,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 744,
+    "exercise_id": 744,
+    "muscle": "triceps"
+  },
+  {
+    "id": 745,
+    "exercise_id": 745,
+    "muscle": "triceps"
+  },
+  {
+    "id": 746,
+    "exercise_id": 746,
+    "muscle": "biceps"
+  },
+  {
+    "id": 747,
+    "exercise_id": 747,
+    "muscle": "biceps"
+  },
+  {
+    "id": 748,
+    "exercise_id": 748,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 749,
+    "exercise_id": 749,
+    "muscle": "chest"
+  },
+  {
+    "id": 750,
+    "exercise_id": 750,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 751,
+    "exercise_id": 751,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 752,
+    "exercise_id": 752,
+    "muscle": "calves"
+  },
+  {
+    "id": 753,
+    "exercise_id": 753,
+    "muscle": "biceps"
+  },
+  {
+    "id": 754,
+    "exercise_id": 754,
+    "muscle": "calves"
+  },
+  {
+    "id": 755,
+    "exercise_id": 755,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 756,
+    "exercise_id": 756,
+    "muscle": "biceps"
+  },
+  {
+    "id": 757,
+    "exercise_id": 757,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 758,
+    "exercise_id": 758,
+    "muscle": "triceps"
+  },
+  {
+    "id": 759,
+    "exercise_id": 759,
+    "muscle": "traps"
+  },
+  {
+    "id": 760,
+    "exercise_id": 760,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 761,
+    "exercise_id": 761,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 762,
+    "exercise_id": 762,
+    "muscle": "calves"
+  },
+  {
+    "id": 763,
+    "exercise_id": 763,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 764,
+    "exercise_id": 764,
+    "muscle": "abductors"
+  },
+  {
+    "id": 765,
+    "exercise_id": 765,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 766,
+    "exercise_id": 766,
+    "muscle": "biceps"
+  },
+  {
+    "id": 767,
+    "exercise_id": 767,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 768,
+    "exercise_id": 768,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 769,
+    "exercise_id": 769,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 770,
+    "exercise_id": 770,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 771,
+    "exercise_id": 771,
+    "muscle": "triceps"
+  },
+  {
+    "id": 772,
+    "exercise_id": 772,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 773,
+    "exercise_id": 773,
+    "muscle": "forearms"
+  },
+  {
+    "id": 774,
+    "exercise_id": 774,
+    "muscle": "biceps"
+  },
+  {
+    "id": 775,
+    "exercise_id": 775,
+    "muscle": "biceps"
+  },
+  {
+    "id": 776,
+    "exercise_id": 776,
+    "muscle": "triceps"
+  },
+  {
+    "id": 777,
+    "exercise_id": 777,
+    "muscle": "triceps"
+  },
+  {
+    "id": 778,
+    "exercise_id": 778,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 779,
+    "exercise_id": 779,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 780,
+    "exercise_id": 780,
+    "muscle": "forearms"
+  },
+  {
+    "id": 781,
+    "exercise_id": 781,
+    "muscle": "lower back"
+  },
+  {
+    "id": 782,
+    "exercise_id": 782,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 783,
+    "exercise_id": 783,
+    "muscle": "calves"
+  },
+  {
+    "id": 784,
+    "exercise_id": 784,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 785,
+    "exercise_id": 785,
+    "muscle": "triceps"
+  },
+  {
+    "id": 786,
+    "exercise_id": 786,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 787,
+    "exercise_id": 787,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 788,
+    "exercise_id": 788,
+    "muscle": "glutes"
+  },
+  {
+    "id": 789,
+    "exercise_id": 789,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 790,
+    "exercise_id": 790,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 791,
+    "exercise_id": 791,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 792,
+    "exercise_id": 792,
+    "muscle": "lower back"
+  },
+  {
+    "id": 793,
+    "exercise_id": 793,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 794,
+    "exercise_id": 794,
+    "muscle": "chest"
+  },
+  {
+    "id": 795,
+    "exercise_id": 795,
+    "muscle": "lats"
+  },
+  {
+    "id": 796,
+    "exercise_id": 796,
+    "muscle": "middle back"
+  },
+  {
+    "id": 797,
+    "exercise_id": 797,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 798,
+    "exercise_id": 798,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 799,
+    "exercise_id": 799,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 800,
+    "exercise_id": 800,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 801,
+    "exercise_id": 801,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 802,
+    "exercise_id": 802,
+    "muscle": "lower back"
+  },
+  {
+    "id": 803,
+    "exercise_id": 803,
+    "muscle": "triceps"
+  },
+  {
+    "id": 804,
+    "exercise_id": 804,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 805,
+    "exercise_id": 805,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 806,
+    "exercise_id": 806,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 807,
+    "exercise_id": 807,
+    "muscle": "chest"
+  },
+  {
+    "id": 808,
+    "exercise_id": 808,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 809,
+    "exercise_id": 809,
+    "muscle": "middle back"
+  },
+  {
+    "id": 810,
+    "exercise_id": 810,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 811,
+    "exercise_id": 811,
+    "muscle": "chest"
+  },
+  {
+    "id": 812,
+    "exercise_id": 812,
+    "muscle": "middle back"
+  },
+  {
+    "id": 813,
+    "exercise_id": 813,
+    "muscle": "triceps"
+  },
+  {
+    "id": 814,
+    "exercise_id": 814,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 815,
+    "exercise_id": 815,
+    "muscle": "abductors"
+  },
+  {
+    "id": 816,
+    "exercise_id": 816,
+    "muscle": "adductors"
+  },
+  {
+    "id": 817,
+    "exercise_id": 817,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 818,
+    "exercise_id": 818,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 819,
+    "exercise_id": 819,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 820,
+    "exercise_id": 820,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 821,
+    "exercise_id": 821,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 822,
+    "exercise_id": 822,
+    "muscle": "triceps"
+  },
+  {
+    "id": 823,
+    "exercise_id": 823,
+    "muscle": "triceps"
+  },
+  {
+    "id": 824,
+    "exercise_id": 824,
+    "muscle": "triceps"
+  },
+  {
+    "id": 825,
+    "exercise_id": 825,
+    "muscle": "triceps"
+  },
+  {
+    "id": 826,
+    "exercise_id": 826,
+    "muscle": "triceps"
+  },
+  {
+    "id": 827,
+    "exercise_id": 827,
+    "muscle": "triceps"
+  },
+  {
+    "id": 828,
+    "exercise_id": 828,
+    "muscle": "triceps"
+  },
+  {
+    "id": 829,
+    "exercise_id": 829,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 830,
+    "exercise_id": 830,
+    "muscle": "biceps"
+  },
+  {
+    "id": 831,
+    "exercise_id": 831,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 832,
+    "exercise_id": 832,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 833,
+    "exercise_id": 833,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 834,
+    "exercise_id": 834,
+    "muscle": "middle back"
+  },
+  {
+    "id": 835,
+    "exercise_id": 835,
+    "muscle": "lats"
+  },
+  {
+    "id": 836,
+    "exercise_id": 836,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 837,
+    "exercise_id": 837,
+    "muscle": "middle back"
+  },
+  {
+    "id": 838,
+    "exercise_id": 838,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 839,
+    "exercise_id": 839,
+    "muscle": "traps"
+  },
+  {
+    "id": 840,
+    "exercise_id": 840,
+    "muscle": "traps"
+  },
+  {
+    "id": 841,
+    "exercise_id": 841,
+    "muscle": "shoulders"
+  },
+  {
+    "id": 842,
+    "exercise_id": 842,
+    "muscle": "lats"
+  },
+  {
+    "id": 843,
+    "exercise_id": 843,
+    "muscle": "lats"
+  },
+  {
+    "id": 844,
+    "exercise_id": 844,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 845,
+    "exercise_id": 845,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 846,
+    "exercise_id": 846,
+    "muscle": "lower back"
+  },
+  {
+    "id": 847,
+    "exercise_id": 847,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 848,
+    "exercise_id": 848,
+    "muscle": "triceps"
+  },
+  {
+    "id": 849,
+    "exercise_id": 849,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 850,
+    "exercise_id": 850,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 851,
+    "exercise_id": 851,
+    "muscle": "lats"
+  },
+  {
+    "id": 852,
+    "exercise_id": 852,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 853,
+    "exercise_id": 853,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 854,
+    "exercise_id": 854,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 855,
+    "exercise_id": 855,
+    "muscle": "chest"
+  },
+  {
+    "id": 856,
+    "exercise_id": 856,
+    "muscle": "chest"
+  },
+  {
+    "id": 857,
+    "exercise_id": 857,
+    "muscle": "chest"
+  },
+  {
+    "id": 858,
+    "exercise_id": 858,
+    "muscle": "lats"
+  },
+  {
+    "id": 859,
+    "exercise_id": 859,
+    "muscle": "lats"
+  },
+  {
+    "id": 860,
+    "exercise_id": 860,
+    "muscle": "lats"
+  },
+  {
+    "id": 861,
+    "exercise_id": 861,
+    "muscle": "biceps"
+  },
+  {
+    "id": 862,
+    "exercise_id": 862,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 863,
+    "exercise_id": 863,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 864,
+    "exercise_id": 864,
+    "muscle": "abdominals"
+  },
+  {
+    "id": 865,
+    "exercise_id": 865,
+    "muscle": "abductors"
+  },
+  {
+    "id": 866,
+    "exercise_id": 866,
+    "muscle": "hamstrings"
+  },
+  {
+    "id": 867,
+    "exercise_id": 867,
+    "muscle": "forearms"
+  },
+  {
+    "id": 868,
+    "exercise_id": 868,
+    "muscle": "forearms"
+  },
+  {
+    "id": 869,
+    "exercise_id": 869,
+    "muscle": "forearms"
+  },
+  {
+    "id": 870,
+    "exercise_id": 870,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 871,
+    "exercise_id": 871,
+    "muscle": "quadriceps"
+  },
+  {
+    "id": 872,
+    "exercise_id": 872,
+    "muscle": "biceps"
+  },
+  {
+    "id": 873,
+    "exercise_id": 873,
+    "muscle": "biceps"
+  }
+]

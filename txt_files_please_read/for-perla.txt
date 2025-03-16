@@ -1,0 +1,10 @@
+WARNINGS:
+
+Update python or flask?
+    I think its python 3
+    she just has python
+
+Update postgres
+    because it will give problems when using pg17 commands
+    she has pg14, she nees pg17
+    

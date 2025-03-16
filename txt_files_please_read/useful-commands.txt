@@ -1,0 +1,29 @@
+check if postgres is isntalled:
+
+postgres --version
+
+
+-----------
+
+open postgres:
+
+psql -U postgres
+
+---------------------
+check all postgres 
+
+psql -U postgres -d postgres -c "\l"
+
+my (gio) password for postgres is 0000
+
+alejandro password for postgre is claudio0911
+
+para todos deberia ser 0000, so cambienla si no es esa
+
+y tambien debe usar port 5432
+
+----------------------------
+
+check all tables in sportsuser db
+
+psql -U postgres -d sportsdb -c "\dt"

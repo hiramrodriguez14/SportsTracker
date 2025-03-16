@@ -2,18 +2,20 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Python: Flask Debug",
+            "name": "Debug main.py in ucrt64",
             "type": "python",
             "request": "launch",
-            //cuidaaado, esto redirecciona al launching de vs code
-            "program": "${workspaceFolder}/code/tester.py",
-            "console": "integratedTerminal",
-            "args": [],
-            "justMyCode": true,
-            "env": {
-                "FLASK_APP": "app.py",
-                "FLASK_ENV": "development"
-            }
+            "program": "${workspaceFolder}/main.py",
+            "python": "C:/msys64/ucrt64/bin/python.exe",
+            "console": "integratedTerminal"
+        },
+        {
+            "name": "Debug other scripts in venv",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "python": "${workspaceFolder}/venv/bin/python",
+            "console": "integratedTerminal"
         }
     ]
 }

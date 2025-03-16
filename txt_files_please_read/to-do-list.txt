@@ -1,0 +1,42 @@
+ok gente, me volvi loco e hice cosas cc
+
+    altere los jsons para que automaticamente prendan los venvs al correr cualquier archivo py
+        (ahora tenemos un programa hibrido, con jsons y venvs, todos los pros y 0 cons :D)
+    
+    borre todos los comments y emojis del codigo
+
+    saque el front end y el main (eso lo devolvemos pa la phase 2)
+
+    hice el etl limpio (se supone)
+        lo que hice fue implementar un skip al traer/llamar la data
+
+    actualice el github a como se supone que va y mezcle los branches, ahora si vamos bien
+    
+lo unico que falta es 
+
+    1 arreglar el etl de: exercise, exercise_instructions, exercise_images
+
+    2 queriar en datagrip para ver que esten bien
+
+    3 if not clean, scripts para limpiar la data
+
+    4 que me avisen para entonces yo tirar el push y el 'heroku deploy'
+    
+    5 anadir heroku login y probably postgres al readme.md
+
+    6 borrar este to do list cuando ya hayamos terminado
+
+
+---------------------------
+
+
+PARA PERLA Y ALEJANDRO QUE YA HABIAN CREADO LAS TABLAS:
+
+tienen que darles DROP a las tablas en datagrip porque si no, tienen las tablas sucias
+
+
+--
+giovanny
+
+
+-----------------------------------
