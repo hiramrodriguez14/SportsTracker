@@ -3,18 +3,17 @@ import os
 
 DATABASE_URL = os.getenv("DATABASE_URL")
 
-def table_exists(conn, table_name):
-    cur = conn.cursor()
+if not DATABASE_URL:
+    raise ValueError("ERROR: DATABASE_URL is not set. Make sure you are using Heroku's environment variables.")
+
+conn = psycopg2.connect(DATABASE_URL, sslmode="require")
+cur = conn.cursor()
+
+def table_exists(table_name):
     cur.execute("SELECT EXISTS (SELECT 1 FROM information_schema.tables WHERE table_name = %s)", (table_name,))
-    exists = cur.fetchone()[0]
-    cur.close()
-    return exists
+    return cur.fetchone()[0]
 
 def create_tables():
-    conn = psycopg2.connect(DATABASE_URL)
-    cur = conn.cursor()
-    results = []
-
     tables = {
         "sports": """
             CREATE TABLE sports (
@@ -107,17 +106,23 @@ def create_tables():
         """
     }
 
+    results = []
     for table, sql in tables.items():
-        if table_exists(conn, table):
+        if table_exists(table):
             results.append(f"Table '{table}' already exists. Skipping creation.")
         else:
             cur.execute(sql)
             results.append(f"Table '{table}' created successfully.")
 
     conn.commit()
-    cur.close()
-    conn.close()
     return results
 
-table_results = create_tables()
-print("\n".join(table_results))
+try:
+    table_results = create_tables()
+    print("\n".join(table_results))
+    print("Database setup complete!")
+except Exception as e:
+    print(f"ERROR: Failed to create tables: {e}")
+finally:
+    cur.close()
+    conn.close()
