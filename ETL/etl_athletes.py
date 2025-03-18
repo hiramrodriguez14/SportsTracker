@@ -7,9 +7,8 @@ DB_NAME = "sportsdb"
 DB_USER = "postgres"
 DB_HOST = "localhost"
 
-DB_PORT = os.getenv("DB_PORT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
-
+DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
+DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
 if not DB_PORT:
     DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
     os.environ["DB_PORT"] = DB_PORT

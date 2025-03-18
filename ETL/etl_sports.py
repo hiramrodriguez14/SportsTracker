@@ -1,5 +1,5 @@
 import psycopg2
-import pandas as pd
+import json
 import os
 import getpass
 
@@ -18,33 +18,28 @@ if not DB_PASSWORD:
     DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
     os.environ["DB_PASSWORD"] = DB_PASSWORD
 
-def check_foreign_key(conn, table, column, value):
-    cur = conn.cursor()
-    cur.execute(f"SELECT 1 FROM {table} WHERE {column} = %s", (value,))
-    exists = cur.fetchone()
-    cur.close()
-    return exists
-
-def load_teams():
+def load_sports():
     try:
         conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
-        df = pd.read_csv("data/teams_.csv").dropna()
-
         cur = conn.cursor()
-        for _, row in df.iterrows():
-            sport_id = int(row["sport"])
-            if not check_foreign_key(conn, "sports", "id", sport_id):
+
+        with open("data/sports_with_exercises.json", "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+        for row in data:
+            if any(v is None or v == "" for v in row.values()):
                 continue
 
             cur.execute(
-                "INSERT INTO teams (id, name, sport) VALUES (%s, %s, %s) ON CONFLICT DO NOTHING",
-                (row["id"], row["name"], sport_id)
+                "INSERT INTO sports (id, name, gender, venue) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING",
+                (row["id"], row["name"], row["gender"], row["venue"])
             )
+
         conn.commit()
         cur.close()
         conn.close()
     except Exception as e:
-        print(f"Error loading teams: {e}")
+        print(f"Error loading sports: {e}")
 
 if __name__ == "__main__":
-    load_teams()
+    load_sports()

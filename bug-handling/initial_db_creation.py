@@ -7,8 +7,8 @@ DB_NAME = "sportsdb"
 DB_USER = "postgres"
 DB_HOST = "localhost"
 
-DB_PORT = os.getenv("DB_PORT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
+DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
 
 if not DB_PORT:
     DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
@@ -80,13 +80,13 @@ def create_tables():
         "exercises": """
             CREATE TABLE exercises (
                 id SERIAL PRIMARY KEY,
-                alter_id VARCHAR(50),
-                name VARCHAR(255) NOT NULL,
-                force VARCHAR(50),
-                level VARCHAR(50),
-                mechanic VARCHAR(50),
-                equipment VARCHAR(50),
-                category VARCHAR(50)
+                alter_id VARCHAR,
+                name VARCHAR NOT NULL,
+                force VARCHAR,
+                level VARCHAR,
+                mechanic VARCHAR,
+                equipment VARCHAR,
+                category VARCHAR
             )
         """,
         "athletes": """
@@ -103,7 +103,7 @@ def create_tables():
             CREATE TABLE teams (
                 id SERIAL PRIMARY KEY,
                 name VARCHAR(255) NOT NULL,
-                sport_id INT REFERENCES sports(id) ON DELETE CASCADE
+                sport INT REFERENCES sports(id) ON DELETE CASCADE
             )
         """,
         "championships": """
@@ -153,9 +153,9 @@ def create_tables():
         """,
         "sport_exercises": """
             CREATE TABLE sport_exercises (
-                sport_id INT REFERENCES sports(id) ON DELETE CASCADE,
-                exercise_id INT REFERENCES exercises(id) ON DELETE CASCADE,
-                PRIMARY KEY (sport_id, exercise_id)
+                sport INT REFERENCES sports(id) ON DELETE CASCADE,
+                exercise INT REFERENCES exercises(id) ON DELETE CASCADE,
+                PRIMARY KEY (sport, exercise)
             )
         """
     }

@@ -7,8 +7,8 @@ DB_NAME = "sportsdb"
 DB_USER = "postgres"
 DB_HOST = "localhost"
 
-DB_PORT = os.getenv("DB_PORT")
-DB_PASSWORD = os.getenv("DB_PASSWORD")
+DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
+DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
 
 if not DB_PORT:
     DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
@@ -27,12 +27,12 @@ def load_exercises():
             data = json.load(file)
 
         for row in data:
-            if any(v is None or v == "" for v in row.values()):
+            if any(v is None or v == "" for v in row.values()): 
                 continue
 
             cur.execute(
-                "INSERT INTO exercises (alter_id, name, force, level, mechanic, equipment, category) VALUES (%s, %s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING",
-                (row["alter_id"], row["name"], row["force"], row["level"], row["mechanic"], row["equipment"], row["category"])
+                "INSERT INTO exercises (id, alter_id, name, force, level, mechanic, equipment, category) VALUES (%s, %s, %s, %s, %s, %s, %s, %s) ON CONFLICT DO NOTHING",
+                (row["id"], row["alter_id"], row["name"], row["force"], row["level"], row["mechanic"], row["equipment"], row["category"])
             )
 
         conn.commit()
