@@ -1,60 +1,7 @@
 import psycopg2
-import getpass
-import sys
 import os
 
-DB_NAME = "sportsdb"
-DB_USER = "postgres"
-DB_HOST = "localhost"
-
-DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-
-if not DB_PORT:
-    DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-    os.environ["DB_PORT"] = DB_PORT
-
-if not DB_PASSWORD:
-    DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-    os.environ["DB_PASSWORD"] = DB_PASSWORD
-    
-def get_postgres_credentials():
-    attempts = 3
-    while attempts > 0:
-        password = getpass.getpass("Enter your PostgreSQL password: ")
-        port = input("Enter your PostgreSQL port (Default is 5432): ") or "5432"
-
-        try:
-            conn = psycopg2.connect(dbname="postgres", user=DB_USER, password=password, host=DB_HOST, port=port)
-            conn.close()
-            return password, port
-        except psycopg2.OperationalError:
-            print(f"Wrong password or incorrect port. Attempts left: {attempts - 1}")
-            attempts -= 1
-
-    print("Too many failed attempts. Exiting.")
-    sys.exit(1)
-
-def database_exists():
-    conn = psycopg2.connect(dbname="postgres", user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
-    cur = conn.cursor()
-    cur.execute("SELECT 1 FROM pg_database WHERE datname = %s", (DB_NAME,))
-    exists = cur.fetchone()
-    cur.close()
-    conn.close()
-    return exists is not None
-
-def create_database():
-    if database_exists():
-        return "Database already exists. Skipping creation."
-
-    conn = psycopg2.connect(dbname="postgres", user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
-    conn.autocommit = True
-    cur = conn.cursor()
-    cur.execute(f"CREATE DATABASE {DB_NAME} OWNER {DB_USER}")
-    cur.close()
-    conn.close()
-    return "Database created successfully."
+DATABASE_URL = os.getenv("DATABASE_URL")
 
 def table_exists(conn, table_name):
     cur = conn.cursor()
@@ -64,7 +11,7 @@ def table_exists(conn, table_name):
     return exists
 
 def create_tables():
-    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
+    conn = psycopg2.connect(DATABASE_URL)
     cur = conn.cursor()
     results = []
 
@@ -172,7 +119,5 @@ def create_tables():
     conn.close()
     return results
 
-db_result = create_database()
 table_results = create_tables()
-
-print("\n".join([db_result] + table_results))
+print("\n".join(table_results))
