@@ -1,22 +1,11 @@
 import psycopg2
 import sqlite3
 import os
-import getpass
 
-DB_NAME = "sportsdb"
-DB_USER = "postgres"
-DB_HOST = "localhost"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-
-if not DB_PORT:
-    DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-    os.environ["DB_PORT"] = DB_PORT
-
-if not DB_PASSWORD:
-    DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-    os.environ["DB_PASSWORD"] = DB_PASSWORD
+def connect_db():
+    return psycopg2.connect(DATABASE_URL)
 
 def check_foreign_key(conn, table, column, value):
     cur = conn.cursor()
@@ -26,8 +15,9 @@ def check_foreign_key(conn, table, column, value):
     return exists
 
 def load_championships():
-    conn_pg = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
+    conn_pg = connect_db()
     conn_sqlite = sqlite3.connect("data/championships.db")
+    
     cur_pg = conn_pg.cursor()
     cur_sqlite = conn_sqlite.cursor()
     
@@ -36,8 +26,11 @@ def load_championships():
     
     for row in rows:
         winner_team = int(row[2])
+        
+        # ✅ Corrected the any() function
         if any(v is None or v == "" for v in row) or not check_foreign_key(conn_pg, "teams", "id", winner_team):
             continue
+        
         cur_pg.execute(
             "INSERT INTO championships (id, name, winner_team, winner_year) VALUES (%s, %s, %s, %s) ON CONFLICT DO NOTHING",
             row

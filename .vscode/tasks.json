@@ -2,28 +2,29 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run main.py in ucrt64",
+            "label": "Activate Virtual Environment",
             "type": "shell",
-            "command": "C:/msys64/ucrt64/bin/python.exe",
-            "args": ["${workspaceFolder}/main.py"],
+            "command": "${workspaceFolder}/venv/Scripts/python.exe",
+            "args": ["${workspaceFolder}/bug_handling/activate_venv.py"],
+            "problemMatcher": [],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": [],
-            "detail": "Runs main.py inside ucrt64."
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         },
         {
-            "label": "Run Python File (With venv)",
+            "label": "Run Python File",
             "type": "shell",
-            "command": "${workspaceFolder}/venv/bin/python",
+            "command": "${workspaceFolder}/venv/Scripts/python.exe",
             "args": ["${file}"],
+            "dependsOn": "Activate Virtual Environment",
             "problemMatcher": [],
-            "group": {
-                "kind": "build",
-                "isDefault": false
-            },
-            "detail": "Runs all other Python files using the virtual environment."
+            "options": {
+                "cwd": "${workspaceFolder}"
+            }
         }
     ]
 }

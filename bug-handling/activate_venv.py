@@ -3,34 +3,35 @@ import sys
 import subprocess
 
 def setup_and_activate_venv():
-    venv_path = os.path.join(os.getcwd(), ".venv")
-    requirements_file = os.path.join(os.getcwd(), "requirements.txt")
+    workspace_path = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))  # Get the workspace root
+    venv_path = os.path.join(workspace_path, "venv")
+    requirements_file = os.path.join(workspace_path, "requirements.txt")
 
+    # Check if already inside venv
     if sys.prefix == venv_path:
-        print("Virtual environment already activated.")
+        print("✅ Virtual environment already activated.")
         return  
 
+    # Create venv if not found
     if not os.path.exists(venv_path):
-        print("Virtual environment not found. Creating one...")
-        subprocess.run([sys.executable, "-m", "venv", venv_path], check=True)
+        print("⚠️ Virtual environment not found. Creating one...")
+        subprocess.run(["C:\\Users\\proli\\AppData\\Local\\Programs\\Python\\Python313\\python.exe", "-m", "venv", venv_path], check=True)
 
+    # Determine correct Python executable
     if sys.platform == "win32":
-        python_exec = os.path.join(venv_path, "Scripts", "python.exe")
-        pip_exec = os.path.join(venv_path, "Scripts", "pip.exe")
+        activate_script = os.path.join(venv_path, "Scripts", "Activate.ps1")
     else:
-        python_exec = os.path.join(venv_path, "bin", "python")
-        pip_exec = os.path.join(venv_path, "bin", "pip")
+        activate_script = os.path.join(venv_path, "bin", "activate")
 
-    if not os.path.exists(pip_exec):
-        print("pip not found in virtual environment. Installing pip...")
-        subprocess.run([sys.executable, "-m", "ensurepip", "--default-pip"], check=True)
-
+    # Install dependencies if requirements.txt exists
     if os.path.exists(requirements_file):
-        print("Installing dependencies from requirements.txt...")
-        subprocess.run([python_exec, "-m", "pip", "install", "-r", requirements_file, "--break-system-packages"], check=True)
+        print("📦 Installing dependencies from requirements.txt...")
+        subprocess.run([sys.executable, "-m", "pip", "install", "-r", requirements_file, "--break-system-packages"], check=True)
 
-    if "VIRTUAL_ENV" not in os.environ:
-        print("Restarting script inside virtual environment...")
-        os.execv(python_exec, [python_exec] + sys.argv)
+    # Auto-activate virtual environment
+    if sys.platform == "win32":
+        print(f"🔄 To activate, run: & {activate_script}")
+    else:
+        print(f"🔄 To activate, run: source {activate_script}")
 
 setup_and_activate_venv()

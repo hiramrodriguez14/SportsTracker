@@ -1,29 +1,18 @@
 import os
 import subprocess
-import getpass
 
-DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-if not DB_PORT:
-    DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-    os.environ["DB_PORT"] = DB_PORT
-
-if not DB_PASSWORD:
-    DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-    os.environ["DB_PASSWORD"] = DB_PASSWORD
-
-
-ETL_FOLDER = r"ETL" 
+ETL_FOLDER = r"ETL"
 
 ETL_SCRIPTS = [
     "etl_sports.py",
-    "etl_sports_with_exercises.py",
     "etl_teams.py",
     "etl_exercises.py",
+    "etl_sports_with_exercises.py",
     "etl_championships.py",
-    "etl_practices.py",
     "etl_athletes.py",
+    "etl_practices.py",
     "etl_exercise_instructions.py",
     "etl_exercise_primary_muscles.py",
     "etl_exercise_secondary_muscles.py",
@@ -40,7 +29,7 @@ def run_etl_script(script):
     print(f" Running {script}...")
     try:
         subprocess.run(
-            ["python", script_path, DB_PASSWORD, DB_PORT], 
+            ["python", script_path], 
             check=True
         )
         print(f" {script} completed successfully!\n")

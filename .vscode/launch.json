@@ -2,20 +2,13 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "Debug main.py in ucrt64",
-            "type": "python",
-            "request": "launch",
-            "program": "${workspaceFolder}/main.py",
-            "python": "C:/msys64/ucrt64/bin/python.exe",
-            "console": "integratedTerminal"
-        },
-        {
-            "name": "Debug other scripts in venv",
+            "name": "Debug Python Script",
             "type": "python",
             "request": "launch",
             "program": "${file}",
-            "python": "${workspaceFolder}/venv/bin/python",
-            "console": "integratedTerminal"
+            "console": "integratedTerminal",
+            "preLaunchTask": "Activate Virtual Environment",
+            "python": "${workspaceFolder}/venv/Scripts/python.exe"
         }
     ]
 }

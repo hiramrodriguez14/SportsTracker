@@ -1,26 +1,15 @@
 import psycopg2
 import json
 import os
-import getpass
 
-DB_NAME = "sportsdb"
-DB_USER = "postgres"
-DB_HOST = "localhost"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-
-if not DB_PORT:
-    DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-    os.environ["DB_PORT"] = DB_PORT
-
-if not DB_PASSWORD:
-    DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-    os.environ["DB_PASSWORD"] = DB_PASSWORD
+def connect_db():
+    return psycopg2.connect(DATABASE_URL)
 
 def load_sports():
     try:
-        conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
+        conn = connect_db()
         cur = conn.cursor()
 
         with open("data/sports_with_exercises.json", "r", encoding="utf-8") as file:

@@ -1,22 +1,11 @@
 import psycopg2
 import pandas as pd
 import os
-import getpass
 
-DB_NAME = "sportsdb"
-DB_USER = "postgres"
-DB_HOST = "localhost"
+DATABASE_URL = os.getenv("DATABASE_URL")
 
-DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-
-if not DB_PORT:
-    DB_PORT = input("Enter your PostgreSQL port (Default is 5432): ")
-    os.environ["DB_PORT"] = DB_PORT
-
-if not DB_PASSWORD:
-    DB_PASSWORD = getpass.getpass("Enter your PostgreSQL password: ")
-    os.environ["DB_PASSWORD"] = DB_PASSWORD
+def connect_db():
+    return psycopg2.connect(DATABASE_URL)
 
 def check_foreign_key(conn, table, column, value):
     cur = conn.cursor()
@@ -26,7 +15,7 @@ def check_foreign_key(conn, table, column, value):
     return exists
 
 def load_practices():
-    conn = psycopg2.connect(dbname=DB_NAME, user=DB_USER, password=DB_PASSWORD, host=DB_HOST, port=DB_PORT)
+    conn = connect_db()
     df = pd.read_csv("data/practices.csv").dropna()
     cur = conn.cursor()
 

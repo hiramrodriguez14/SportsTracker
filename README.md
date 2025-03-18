@@ -1,5 +1,4 @@
 # heroku info
 
-the user to the heroku:
-
-the password:
+db url:
+postgres://u5ie5npmv1rgvf:p5167c9c6edb4adfcd313ff0d0b54c4cc526b38ab65f3fdf9e9b704a6fe397473@cd1goc44htrmfn.cluster-czrs8kj4isg7.us-east-1.rds.amazonaws.com:5432/dfqftn892u378j
