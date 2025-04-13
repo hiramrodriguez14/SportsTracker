@@ -1,11 +1,16 @@
 # PHASE 2:
 
-# https://db-spring2025-phga-team.herokuapp.com/
+# https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/
 
 
 
 
 # Troubleshooting
+
+For logs:
+
+heroku logs --tail --app db-spring2025-phga-team
+
 
 IF WE DESTROY THE DATABASE
 
