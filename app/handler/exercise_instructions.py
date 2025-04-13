@@ -1,5 +1,5 @@
 from flask import jsonify
-from dao.exercise_instructions import ExerciseInstructionsDAO
+from app.dao.exercise_instructions import ExerciseInstructionsDAO
 
 class ExerciseInstructionsHandler:
     def insertExerciseInstruction(self, exercise_id, json):
@@ -11,8 +11,11 @@ class ExerciseInstructionsHandler:
 
         dao = ExerciseInstructionsDAO()
 
-        if not dao.exerciseExists(exercise_id): #Verificar
+        if not dao.exerciseExists(exercise_id):
             return jsonify({"error": "Exercise ID not found"}), 404
+
+        if dao.isNotValidInstructionNumber(exercise_id, num):
+            return jsonify({"error": "Instruction number already exists for this exercise"}), 409
 
         inserted_id = dao.insertExerciseInstruction(exercise_id, num, instr)
 
@@ -21,18 +24,17 @@ class ExerciseInstructionsHandler:
             "exercise_id": exercise_id,
             "instruction_number": num,
             "description": instr
-        }), 201 
+        }), 201
 
     def deleteExerciseInstruction(self, exercise_id, instruction_id):
         dao = ExerciseInstructionsDAO()
 
         if not dao.exerciseExists(exercise_id):
             return jsonify({"error": "Exercise ID not found"}), 404
-        
+
         if not dao.instructionExists(instruction_id):
             return jsonify({"error": "Instruction ID not found"}), 404
 
         dao.deleteExerciseInstruction(exercise_id, instruction_id)
 
-        return '', 204 
-
+        return '', 204

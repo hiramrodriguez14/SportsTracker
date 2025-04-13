@@ -1,260 +1,283 @@
 {
   "info": {
-    "name": "SportsTracker API",
+    "name": "SportsTracker API - Full (Complete)",
+    "_postman_id": "sports-tracker-full-collection",
+    "description": "Complete API collection for Athlete, Team, Exercise, Championship, Sport, and Analytics endpoints",
     "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
   },
   "item": [
     {
-      "name": "Get All Athletes",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+      "name": "Athletes",
+      "item": [
+        {
+          "name": "Get All Athletes",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/athlete", "host": ["localhost"], "port": "5000", "path": ["athlete"] }
           }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/athlete",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "athlete"
-          ]
-        }
-      }
-    },
-    {
-      "name": "Get Athlete by ID",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/athlete/100",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "athlete",
-            "100"
-          ]
-        }
-      }
-    },
-    {
-      "name": "Create Athlete",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/athlete",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "athlete"
-          ]
         },
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"id\": 100,\n  \"name\": \"Test Athlete\",\n  \"age\": 25,\n  \"gender\": \"M\",\n  \"height\": 175.5,\n  \"weight\": 70.2\n}"
-        }
-      }
-    },
-    {
-      "name": "Update Athlete",
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        {
+          "name": "Get Athlete by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/athlete/100", "host": ["localhost"], "port": "5000", "path": ["athlete", "100"] }
           }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/athlete/100",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "athlete",
-            "100"
-          ]
         },
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"id\": 100,\n  \"name\": \"Test Athlete\",\n  \"age\": 25,\n  \"gender\": \"M\",\n  \"height\": 175.5,\n  \"weight\": 70.2\n}"
-        }
-      }
-    },
-    {
-      "name": "Delete Athlete",
-      "request": {
-        "method": "DELETE",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        {
+          "name": "Create Athlete",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/athlete", "host": ["localhost"], "port": "5000", "path": ["athlete"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 100,\n  \"name\": \"Test Athlete\",\n  \"age\": 25,\n  \"gender\": \"M\",\n  \"height\": 175.5,\n  \"weight\": 70.2\n}" }
           }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/athlete/100",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "athlete",
-            "100"
-          ]
-        }
-      }
-    },
-    {
-      "name": "Get All Teams",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/team",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "team"
-          ]
-        }
-      }
-    },
-    {
-      "name": "Get Team by ID",
-      "request": {
-        "method": "GET",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/team/200",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "team",
-            "200"
-          ]
-        }
-      }
-    },
-    {
-      "name": "Create Team",
-      "request": {
-        "method": "POST",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
-          }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/team",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "team"
-          ]
         },
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"id\": 200,\n  \"name\": \"Test Team\",\n  \"sport\": 1\n}"
-        }
-      }
-    },
-    {
-      "name": "Update Team",
-      "request": {
-        "method": "PUT",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+        {
+          "name": "Update Athlete",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "http://localhost:5000/athlete/100", "host": ["localhost"], "port": "5000", "path": ["athlete", "100"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 100,\n  \"name\": \"Updated Name\",\n  \"age\": 26,\n  \"gender\": \"M\",\n  \"height\": 180.0,\n  \"weight\": 75.0\n}" }
           }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/team/200",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "team",
-            "200"
-          ]
         },
-        "body": {
-          "mode": "raw",
-          "raw": "{\n  \"id\": 200,\n  \"name\": \"Test Team\",\n  \"sport\": 1\n}"
+        {
+          "name": "Delete Athlete",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/athlete/100", "host": ["localhost"], "port": "5000", "path": ["athlete", "100"] }
+          }
         }
-      }
+      ]
     },
     {
-      "name": "Delete Team",
-      "request": {
-        "method": "DELETE",
-        "header": [
-          {
-            "key": "Content-Type",
-            "value": "application/json"
+      "name": "Teams",
+      "item": [
+        {
+          "name": "Get All Teams",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/team", "host": ["localhost"], "port": "5000", "path": ["team"] }
           }
-        ],
-        "url": {
-          "raw": "http://localhost:5000/team/200",
-          "protocol": "http",
-          "host": [
-            "localhost"
-          ],
-          "port": "5000",
-          "path": [
-            "team",
-            "200"
-          ]
+        },
+        {
+          "name": "Get Team by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/team/200", "host": ["localhost"], "port": "5000", "path": ["team", "200"] }
+          }
+        },
+        {
+          "name": "Create Team",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/team", "host": ["localhost"], "port": "5000", "path": ["team"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 200,\n  \"name\": \"Test Team\",\n  \"sport\": 1\n}" }
+          }
+        },
+        {
+          "name": "Update Team",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "http://localhost:5000/team/200", "host": ["localhost"], "port": "5000", "path": ["team", "200"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 200,\n  \"name\": \"Updated Team\",\n  \"sport\": 2\n}" }
+          }
+        },
+        {
+          "name": "Delete Team",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/team/200", "host": ["localhost"], "port": "5000", "path": ["team", "200"] }
+          }
         }
-      }
+      ]
+    },
+    {
+      "name": "Exercises",
+      "item": [
+        {
+          "name": "Get All Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/exercise", "host": ["localhost"], "port": "5000", "path": ["exercise"] }
+          }
+        },
+        {
+          "name": "Get Exercise by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/exercise/875",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["exercise", "875"]
+            }
+          }
+        },
+        {
+          "name": "Create Exercise",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/exercise", "host": ["localhost"], "port": "5000", "path": ["exercise"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"alter_id\": \"Zottman_Preacher_Curl\",\n  \"category\": \"strength\",\n  \"equipment\": \"dumbbell\",\n  \"force\": \"pull\",\n  \"level\": \"intermediate\",\n  \"mechanic\": \"isolation\",\n  \"name\": \"Zottman Preacher Curl\"\n}" }
+          }
+        },
+        {
+          "name": "Update Exercise",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "http://localhost:5000/exercise/875", "host": ["localhost"], "port": "5000", "path": ["exercise", "875"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"alter_id\": \"Zottman_Preacher_Curl\",\n  \"category\": \"strength\",\n  \"equipment\": \"barbell\",\n  \"force\": \"push\",\n  \"level\": \"advanced\",\n  \"mechanic\": \"compound\",\n  \"name\": \"Zottman Preacher Curl\"\n}" }
+          }
+        },
+        {
+          "name": "Delete Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/exercise/875", "host": ["localhost"], "port": "5000", "path": ["exercise", "875"] }
+          }
+        },
+        {
+          "name": "Get Exercises by Muscle",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "http://localhost:5000/exercises/muscle-group?muscle=chest",
+              "host": ["localhost"],
+              "port": "5000",
+              "path": ["exercises", "muscle-group"],
+              "query": [{ "key": "muscle", "value": "chest" }]
+            }
+          }
+        },
+        {
+          "name": "Get Most Complex Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/exercises/most-complex", "host": ["localhost"], "port": "5000", "path": ["exercises", "most-complex"] }
+          }
+        },
+        {
+          "name": "Get Most Performed Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/exercises/most-performed", "host": ["localhost"], "port": "5000", "path": ["exercises", "most-performed"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Championships",
+      "item": [
+        {
+          "name": "Get All Championships",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/championship", "host": ["localhost"], "port": "5000", "path": ["championship"] }
+          }
+        },
+        {
+          "name": "Get Championship by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/championship/1", "host": ["localhost"], "port": "5000", "path": ["championship", "1"] }
+          }
+        },
+        {
+          "name": "Create Championship",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/championship", "host": ["localhost"], "port": "5000", "path": ["championship"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"World Cup\",\n  \"year\": 2025,\n  \"winner_team\": 2\n}" }
+          }
+        },
+        {
+          "name": "Update Championship",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "http://localhost:5000/championship/1", "host": ["localhost"], "port": "5000", "path": ["championship", "1"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Cup\",\n  \"year\": 2026,\n  \"winner_team\": 3\n}" }
+          }
+        },
+        {
+          "name": "Delete Championship",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/championship/1", "host": ["localhost"], "port": "5000", "path": ["championship", "1"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sports",
+      "item": [
+        {
+          "name": "Get All Sports",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/sport", "host": ["localhost"], "port": "5000", "path": ["sport"] }
+          }
+        },
+        {
+          "name": "Get Sport by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "http://localhost:5000/sport/1", "host": ["localhost"], "port": "5000", "path": ["sport", "1"] }
+          }
+        },
+        {
+          "name": "Create Sport",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://localhost:5000/sport", "host": ["localhost"], "port": "5000", "path": ["sport"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Basketball\"\n}" }
+          }
+        },
+        {
+          "name": "Update Sport",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "http://localhost:5000/sport/1", "host": ["localhost"], "port": "5000", "path": ["sport", "1"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Basketball\"\n}" }
+          }
+        },
+        {
+          "name": "Delete Sport",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://localhost:5000/sport/1", "host": ["localhost"], "port": "5000", "path": ["sport", "1"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "item": [
+        {
+          "name": "Top Teams",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/teams/top-teams", "host": ["localhost"], "port": "5000", "path": ["teams", "top-teams"] } }
+        },
+        {
+          "name": "Sports Distribution",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/teams/sports-distribution", "host": ["localhost"], "port": "5000", "path": ["teams", "sports-distribution"] } }
+        },
+        {
+          "name": "Most Championship Wins",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/championships/most-wins", "host": ["localhost"], "port": "5000", "path": ["championships", "most-wins"] } }
+        },
+        {
+          "name": "Sport Popularity",
+          "request": { "method": "GET", "url": { "raw": "http://localhost:5000/sports/popularity", "host": ["localhost"], "port": "5000", "path": ["sports", "popularity"] } }
+        }
+      ]
     }
   ]
 }

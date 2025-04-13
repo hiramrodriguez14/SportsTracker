@@ -1,5 +1,6 @@
 from flask import jsonify
-from dao.teams import TeamsDAO
+from app.dao.teams import TeamsDAO
+from app.handler.handler_analytics import AnalyticsHandler
 
 class TeamHandler:
     
@@ -61,28 +62,9 @@ class TeamHandler:
         
         dao.deleteTeam(id)
         return '', 204
-    
+
     def getTopTeams(self):
-        dao = TeamsDAO()
-        teams = dao.getTopTeams()
-        
-        if not teams:
-            return jsonify({"error": "No teams found"}), 404
-        
-        return jsonify(teams), 200
-    
+        return AnalyticsHandler().getTopTeams()
+
     def getSportsDistribution(self):
-        dao = TeamsDAO()
-        distribution = dao.getSportsDistribution()
-        
-        if not distribution:
-            return jsonify({"error": "No sports found"}), 404
-        
-        return jsonify(distribution), 200
-        
-        
-    
-    
-        
-    
-    
+        return AnalyticsHandler().getSportsDistribution()

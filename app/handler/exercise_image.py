@@ -1,5 +1,5 @@
 from flask import jsonify
-from dao.exercise_image import ExerciseImageDAO
+from app.dao.exercise_image import ExerciseImageDAO
 
 class ExerciseImageHandler:
     def insertExerciseImage(self, exercise_id, json):

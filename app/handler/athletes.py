@@ -1,4 +1,4 @@
-from dao.dao_athletes import AthleteDAO
+from app.dao.dao_athletes import AthleteDAO
 
 class AthleteHandler:
     def __init__(self):

@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from app.handler.handler_athlete import AthleteHandler
+from app.handler.athletes import AthleteHandler
 
 athlete_routes = Blueprint("athlete_routes", __name__)
 handler = AthleteHandler()

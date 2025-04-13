@@ -1,21 +1,11 @@
-from app.config.pgconfig import pgconfig
+from bug_handling.choose_db import get_db_config
 import psycopg2
 import os
 from collections import defaultdict
 
 class dao_exercise:
     def __init__(self):
-        #self.conn = psycopg2.connect(os.getenv("DATABASE_URL"))
-        url = "dbname=%s password=%s host=%s port=%s user=%s" % (
-            pgconfig.DB_NAME,
-            pgconfig.DB_PASSWORD,
-            pgconfig.DB_HOST,
-            pgconfig.DB_PORT,
-            pgconfig.DB_USER
-        )
-
-
-        self.conn = psycopg2.connect(url)
+        self.conn = psycopg2.connect(get_db_config().connection_url)
 
     def insert_exercise(self, name, category, equipment, mechanic, force, level, alter_id):
         """Insert a new exercise while preventing duplicates."""

@@ -1,16 +1,9 @@
 import psycopg2
-from app.config.pgconfig import pgconfig
+from bug_handling.choose_db import get_db_config
 
 class ExerciseInstructionsDAO:
     def __init__(self):
-        url = "dbname= %s password = %s host = %s port = %s user = %s" % (
-            pgconfig.DB_NAME,
-            pgconfig.DB_PASSWORD,
-            pgconfig.DB_HOST,
-            pgconfig.DB_PORT,
-            pgconfig.DB_USER
-        )
-        self.conn = psycopg2.connect(url)
+        self.conn = psycopg2.connect(get_db_config().connection_url)
 
     def exerciseExists(self, eid):
         cursor = self.conn.cursor()
@@ -19,11 +12,19 @@ class ExerciseInstructionsDAO:
         exists = cursor.fetchone() is not None
         cursor.close()
         return exists
-    
+
     def instructionExists(self, insid):
         cursor = self.conn.cursor()
         query = "SELECT 1 FROM exercise_instructions WHERE id = %s"
         cursor.execute(query, (insid,))
+        exists = cursor.fetchone() is not None
+        cursor.close()
+        return exists
+
+    def isNotValidInstructionNumber(self, exercise_id, num):
+        cursor = self.conn.cursor()
+        query = "SELECT 1 FROM exercise_instructions WHERE exercise_id = %s AND instruction_number = %s"
+        cursor.execute(query, (exercise_id, num))
         exists = cursor.fetchone() is not None
         cursor.close()
         return exists

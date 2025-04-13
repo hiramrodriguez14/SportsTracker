@@ -1,16 +1,9 @@
 import psycopg2
-from app.config.pgconfig import pgconfig
+from bug_handling.choose_db import get_db_config
 
 class ExerciseSecondaryMusclesDAO:
     def __init__(self):
-        url = "dbname= %s password = %s host = %s port = %s user = %s" % (
-            pgconfig.DB_NAME,
-            pgconfig.DB_PASSWORD,
-            pgconfig.DB_HOST,
-            pgconfig.DB_PORT,
-            pgconfig.DB_USER
-        )
-        self.conn = psycopg2.connect(url)
+        self.conn = psycopg2.connect(get_db_config().connection_url)
 
     def exerciseExists(self, eid):
         cursor = self.conn.cursor()

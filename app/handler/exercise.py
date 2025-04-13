@@ -1,4 +1,4 @@
-from dao.dao_exercise import dao_exercise
+from app.dao.dao_exercise import dao_exercise
 from flask import jsonify
 
 dao = dao_exercise()

@@ -3,14 +3,17 @@ from flask_cors import CORS
 import os
 
 # Import handlers
-from handler.athletes import AthleteHandler
-from handler.exercise_instructions import ExerciseInstructionsHandler
-from handler.teams import TeamHandler
-from handler.exercise_image import ExerciseImageHandler
-from handler.exercise_primary_muscles import ExercisePrimaryMusclesHandler
-from handler.exercise_secondary_muscles import ExerciseSecondaryMusclesHandler
-from handler.sport_exercises import SportExercisesHandler
-from handler.exercise import ExerciseHandler
+from app.handler.athletes import AthleteHandler
+from app.handler.exercise_instructions import ExerciseInstructionsHandler
+from app.handler.teams import TeamHandler
+from app.handler.exercise_image import ExerciseImageHandler
+from app.handler.exercise_primary_muscles import ExercisePrimaryMusclesHandler
+from app.handler.exercise_secondary_muscles import ExerciseSecondaryMusclesHandler
+from app.handler.sport_exercises import SportExercisesHandler
+from app.handler.exercise import ExerciseHandler
+from app.handler.handler_sport import SportHandler
+from app.handler.handler_championship import ChampionshipHandler
+from app.handler.handler_analytics import AnalyticsHandler
 
 # Trigger DB selector
 from bug_handling.choose_db import get_db_config
@@ -113,6 +116,66 @@ def get_exercises_by_muscle():
 @app.route("/exercises/most-complex", methods=["GET"])
 def get_most_complex_exercises():
     return exercise_handler.get_most_complex_exercises()
+
+# SPORT ROUTES
+sport_handler = SportHandler()
+
+@app.route("/sport", methods=["GET"])
+def get_all_sports():
+    return sport_handler.getAllSports()
+
+@app.route("/sport/<int:sport_id>", methods=["GET"])
+def get_sport_by_id(sport_id):
+    return sport_handler.getSportById(sport_id)
+
+@app.route("/sport", methods=["POST"])
+def insert_sport():
+    return sport_handler.insertSport(request.json)
+
+@app.route("/sport/<int:sport_id>", methods=["PUT"])
+def update_sport(sport_id):
+    return sport_handler.updateSport(sport_id, request.json)
+
+@app.route("/sport/<int:sport_id>", methods=["DELETE"])
+def delete_sport(sport_id):
+    return sport_handler.deleteSport(sport_id)
+
+
+# CHAMPIONSHIP ROUTES
+championship_handler = ChampionshipHandler()
+
+@app.route("/championship", methods=["GET"])
+def get_all_championships():
+    return championship_handler.getAllChampionships()
+
+@app.route("/championship/<int:champ_id>", methods=["GET"])
+def get_championship_by_id(champ_id):
+    return championship_handler.getChampionshipById(champ_id)
+
+@app.route("/championship", methods=["POST"])
+def insert_championship():
+    return championship_handler.insertChampionship(request.json)
+
+@app.route("/championship/<int:champ_id>", methods=["PUT"])
+def update_championship(champ_id):
+    return championship_handler.updateChampionship(champ_id, request.json)
+
+@app.route("/championship/<int:champ_id>", methods=["DELETE"])
+def delete_championship(champ_id):
+    return championship_handler.deleteChampionship(champ_id)
+
+
+# ANALYTICS ROUTES
+analytics_handler = AnalyticsHandler()
+
+@app.route("/championships/most-wins", methods=["GET"])
+def get_most_championship_wins():
+    return analytics_handler.getMostChampionshipWins()
+
+@app.route("/sports/popularity", methods=["GET"])
+def get_sport_popularity():
+    return analytics_handler.getSportPopularity()
+
 
 # RELATIONSHIP ROUTES
 @app.route('/exercise/<int:exercise_id>/instruction', methods=['POST'])
