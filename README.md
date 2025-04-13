@@ -1,3 +1,24 @@
+# PHASE 2:
+
+# Postman Collection – SportsTracker API
+
+This collection includes all REST API endpoints for testing:
+
+- `/athlete` CRUD
+- `/team` CRUD
+
+### How to Use
+
+1. Open Postman
+2. Click "Import"
+3. Upload `SportsTracker.postman_collection.json`
+4. Set `localhost:5000` as your base URL
+5. Run and test your endpoints
+
+# --------------------------------------------------
+
+# PHASE 1:
+
 # heroku info
 
 db url:

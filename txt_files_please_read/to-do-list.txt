@@ -1,42 +1,68 @@
-ok gente, me volvi loco e hice cosas cc
+Para todos:
 
-    altere los jsons para que automaticamente prendan los venvs al correr cualquier archivo py
-        (ahora tenemos un programa hibrido, con jsons y venvs, todos los pros y 0 cons :D)
-    
-    borre todos los comments y emojis del codigo
+Para que el activate_venv les corra tienen que usar el python de windows como interpreter, no el de msys2
 
-    saque el front end y el main (eso lo devolvemos pa la phase 2)
-
-    hice el etl limpio (se supone)
-        lo que hice fue implementar un skip al traer/llamar la data
-
-    actualice el github a como se supone que va y mezcle los branches, ahora si vamos bien
-    
-lo unico que falta es 
-
-    1 arreglar el etl de: exercise, exercise_instructions, exercise_images
-
-    2 queriar en datagrip para ver que esten bien
-
-    3 if not clean, scripts para limpiar la data
-
-    4 que me avisen para entonces yo tirar el push y el 'heroku deploy'
-    
-    5 anadir heroku login y probably postgres al readme.md
-
-    6 borrar este to do list cuando ya hayamos terminado
+Eso lo hacen con los environment variables, anadiendo el path de python a System>environment
 
 
----------------------------
+-----------------------------------
 
 
-PARA PERLA Y ALEJANDRO QUE YA HABIAN CREADO LAS TABLAS:
+hubo un problema con el merge porque hiram codio en una rama vieja antes del submission de fase 1, no en la que we submit, pero lo que hice fue mergear a la de alejandro que si estaba actualizada, pero entonces hiram deberia chequear qu eno falte nada de lo suyo
 
-tienen que darles DROP a las tablas en datagrip porque si no, tienen las tablas sucias
+-----------------------------------
 
+con respecto a los merge conflicts:
+
+settings json de hiram y el mio,
+    los mezcle en 1
+
+activate venv alejandro y el mio,
+    los mezcle en 1
+
+main, app y app 
+    los
+
+-----------------------------------
+
+Chequeen el archivo bug_handling > choose_db.py !!!!!
+
+
+Hay que aplicarlo a todos los DAOs
+
+
+from bug_handling.config_router import db_config
+import psycopg2
+
+class AthleteDAO:
+    def __init__(self):
+        self.conn = psycopg2.connect(db_config.connection_url)
+
+
+TO DOOOOOOO
+
+HAY QUE APLICARLO A TODOS LOS DAOS, SO FAR ESTA A:
+
+athletes,
+teams.
+
+falta el resto
+
+
+OTRO TO DOOOOOOO
+
+los controles, solo estan los mios (athlete y teams), falta el resto
+
+
+
+-----------------------------------
 
 --
 giovanny
 
 
+
+
 -----------------------------------
+
+

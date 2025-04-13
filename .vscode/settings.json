@@ -1,31 +1,56 @@
 {
-    "python.defaultInterpreterPath": "${workspaceFolder}/venv/Scripts/python.exe",
-    "terminal.integrated.env.windows": {
-        "PYTHONPATH": "${workspaceFolder}/venv"
+  "python.defaultInterpreterPath": "${workspaceFolder}/.venv/Scripts/python.exe",
+  "python.terminal.activateEnvironment": true,
+  "python.envFile": "${workspaceFolder}/.env",
+  "python.analysis.extraPaths": [
+    "./",
+    "./app",
+    "./dao",
+    "./handler",
+    "./controller",
+    "./config"
+  ],
+
+  "terminal.integrated.env.windows": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "DB_PORT": "5432",
+    "DB_PASSWORD": "your_password_here"
+  },
+  "terminal.integrated.env.linux": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "DB_PORT": "5432",
+    "DB_PASSWORD": "your_password_here"
+  },
+  "terminal.integrated.env.osx": {
+    "PYTHONPATH": "${workspaceFolder}",
+    "DB_PORT": "5432",
+    "DB_PASSWORD": "your_password_here"
+  },
+
+  "terminal.integrated.profiles.windows": {
+    "PowerShell": {
+      "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
+      "args": ["-ExecutionPolicy", "Bypass", "-NoExit", "-Command", "& { & '${workspaceFolder}/.venv/Scripts/Activate.ps1' }"]
     },
-    "terminal.integrated.profiles.windows": {
-        "PowerShell": {
-            "path": "C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe",
-            "args": ["-ExecutionPolicy", "Bypass", "-NoExit", "-Command", "& { & '${workspaceFolder}/venv/Scripts/Activate.ps1' }"]
-        },
-        "Command Prompt": {
-            "path": "C:\\Windows\\System32\\cmd.exe",
-            "args": ["/k", "\"${workspaceFolder}\\venv\\Scripts\\activate.bat\""]
-        }
-    },
-    "terminal.integrated.profiles.linux": {
-        "bash": {
-            "path": "/bin/bash",
-            "args": ["--rcfile", "<(echo 'source ${workspaceFolder}/venv/bin/activate')"]
-        }
-    },
-    "terminal.integrated.profiles.osx": {
-        "zsh": {
-            "path": "/bin/zsh",
-            "args": ["--rcfile", "<(echo 'source ${workspaceFolder}/venv/bin/activate')"]
-        }
-    },
-    "terminal.integrated.defaultProfile.windows": "PowerShell",
-    "terminal.integrated.defaultProfile.linux": "bash",
-    "terminal.integrated.defaultProfile.osx": "zsh"
+    "Command Prompt": {
+      "path": "C:\\Windows\\System32\\cmd.exe",
+      "args": ["/k", "\"${workspaceFolder}\\.venv\\Scripts\\activate.bat\""]
+    }
+  },
+  "terminal.integrated.profiles.linux": {
+    "bash": {
+      "path": "/bin/bash",
+      "args": ["-c", "source ${workspaceFolder}/.venv/bin/activate && exec bash"]
+    }
+  },
+  "terminal.integrated.profiles.osx": {
+    "zsh": {
+      "path": "/bin/zsh",
+      "args": ["-c", "source ${workspaceFolder}/.venv/bin/activate && exec zsh"]
+    }
+  },
+
+  "terminal.integrated.defaultProfile.windows": "PowerShell",
+  "terminal.integrated.defaultProfile.linux": "bash",
+  "terminal.integrated.defaultProfile.osx": "zsh"
 }

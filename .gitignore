@@ -1,2 +1,14 @@
+# Virtual environments
 .venv/
 venv/
+
+# __pycache__ folders
+__pycache__/
+**/__pycache__/
+
+# Compiled Python files
+*.py[cod]
+
+# macOS stuff (optional but handy)
+.DS_Store
+
