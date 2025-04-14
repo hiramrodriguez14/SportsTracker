@@ -16,9 +16,9 @@ class ChampionshipDAO:
     def getChampionshipByIdWithWinner(self, champ_id):
         cursor = self.conn.cursor()
         query = """
-            SELECT c.id, c.name, c.year, t.id, t.name
+            SELECT c.id, c.name, c.winner_year, t.id, t.name
             FROM championships c
-            LEFT JOIN team t ON c.winner_team_id = t.id
+            LEFT JOIN teams t ON c.winner_team = t.id
             WHERE c.id = %s;
         """
         cursor.execute(query, (champ_id,))
@@ -39,7 +39,7 @@ class ChampionshipDAO:
 
     def insertChampionship(self, name, year, winner_team_id):
         cursor = self.conn.cursor()
-        query = "INSERT INTO championships(name, year, winner_team_id) VALUES (%s, %s, %s) RETURNING id;"
+        query = "INSERT INTO championships(name, winner_year, winner_team) VALUES (%s, %s, %s) RETURNING id;"
         cursor.execute(query, (name, year, winner_team_id))
         champ_id = cursor.fetchone()[0]
         self.conn.commit()
@@ -48,7 +48,7 @@ class ChampionshipDAO:
 
     def updateChampionship(self, champ_id, name, year, winner_team_id):
         cursor = self.conn.cursor()
-        query = "UPDATE championships SET name = %s, year = %s, winner_team_id = %s WHERE id = %s;"
+        query = "UPDATE championships SET name = %s, winner_year = %s, winner_team = %s WHERE id = %s;"
         cursor.execute(query, (name, year, winner_team_id, champ_id))
         self.conn.commit()
         cursor.close()
