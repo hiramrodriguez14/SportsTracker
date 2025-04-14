@@ -19,15 +19,21 @@ class AthleteDAO:
         cursor.close()
         return result
 
-    def create_athlete(self, athlete_id, name, age, gender, height, weight):
-        cursor = self.conn.cursor()
-        cursor.execute("""
-            INSERT INTO athletes (id, name, age, gender, height, weight)
-            VALUES (%s, %s, %s, %s, %s, %s)
-        """, (athlete_id, name, age, gender, height, weight))
-        self.conn.commit()
-        cursor.close()
-        return athlete_id
+    def create_athlete(self, name, age, gender, height, weight):
+     cursor = self.conn.cursor()
+     cursor.execute("""
+        INSERT INTO athletes (name, age, gender, height, weight) 
+        VALUES  (%s, %s, %s, %s, %s) 
+        RETURNING id
+    """, (name, age, gender, height, weight))
+    
+     # Fetch the id of the newly inserted athlete
+     athlete_id = cursor.fetchone()[0]
+    
+     self.conn.commit()
+     cursor.close()
+    
+     return athlete_id
 
     def update_athlete(self, athlete_id, name, age, gender, height, weight):
         cursor = self.conn.cursor()

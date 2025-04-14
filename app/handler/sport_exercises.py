@@ -2,7 +2,7 @@ from flask import jsonify
 from app.dao.sport_exercises import SportExercisesDAO
 
 class SportExercisesHandler:
-    def insertSportExercise(self, sid, eid):
+    def insertSportExercise(self, eid, sid):
 
         dao = SportExercisesDAO()
 
@@ -13,11 +13,11 @@ class SportExercisesHandler:
         if not dao.sportExist(sid):
             return jsonify({"error": "Sport ID not found"}), 404
    
-        dao.insertSportExercise(sid, eid)
+        dao.insertSportExercise(eid, sid)
         return jsonify({"exercise_id": eid, "sport_id":sid}), 201
      
         
-    def deleteSportExercise(self, sid, eid):
+    def deleteSportExercise(self, eid, sid):
 
         dao = SportExercisesDAO()
 
@@ -28,6 +28,6 @@ class SportExercisesHandler:
         if not dao.sportExist(sid):
             return jsonify({"error": "Sport ID not found"}), 404
    
-        dao.deleteSportExercise(sid, eid)
+        dao.deleteSportExercise(eid, sid)
         return '', 204
      

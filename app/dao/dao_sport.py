@@ -18,8 +18,8 @@ class SportDAO:
         query = """
             SELECT s.id, s.name, s.gender, s.venue, e.id, e.name
             FROM sports s
-            LEFT JOIN sport_exercises se ON s.id = se.sport
-            LEFT JOIN exercises e ON se.exercise = e.id
+            LEFT JOIN sport_exercises es ON s.id = es.sport
+            LEFT JOIN exercises e ON es.exercise = e.id
             WHERE s.id = %s;
         """
         cursor.execute(query, (sport_id,))
@@ -32,7 +32,7 @@ class SportDAO:
         sport_info = rows[0][:4]
         exercises = []
         for row in rows:
-            if row[4]:  
+            if row[4]:
                 exercises.append({"id": row[4], "name": row[5]})
 
         return {

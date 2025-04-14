@@ -21,7 +21,7 @@ class ExerciseSecondaryMusclesDAO:
         cursor.close()
         return exists
 
-    def insertExercisesecondaryMuscles(self, eid, muscle):
+    def insertExerciseSecondaryMuscle(self, eid, muscle):
         cursor = self.conn.cursor()
         cursor.execute(
             "INSERT INTO exercise_secondary_muscles (exercise_id, muscle) VALUES (%s, %s) returning id",
@@ -32,7 +32,7 @@ class ExerciseSecondaryMusclesDAO:
         cursor.close()
         return id
 
-    def deleteExercisesecondaryMuscles(self, eid, muscle_id):
+    def deleteExerciseSecondaryMuscle(self, eid, muscle_id):
         cursor = self.conn.cursor()
         cursor.execute(
             "DELETE FROM exercise_secondary_muscles WHERE exercise_id = %s AND id = %s",

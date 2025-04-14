@@ -10,6 +10,7 @@ class TeamHandler:
         
         name = json['name']
         sport = json['sport_id']
+
         
         dao = TeamsDAO()
         
@@ -35,11 +36,11 @@ class TeamHandler:
         return jsonify(team), 200
     
     def updateTeam(self, id, json):
-        if 'name' not in json or 'sport_id' not in json:
+        if 'name' not in json or ('sport_id' not in json and 'sport' not in json):
             return jsonify({"error": "Missing parameters"}), 400
         name = json['name']
-        sport = json['sport_id']
-        
+        sport = json.get('sport_id') or json.get('sport')
+         
         dao = TeamsDAO()
         if not dao.teamExists(id):
             return jsonify({"error": "Team ID not found"}), 404

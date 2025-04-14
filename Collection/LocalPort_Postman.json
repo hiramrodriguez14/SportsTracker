@@ -455,7 +455,37 @@
           "request": { "method": "GET", "url": { "raw": "http://127.0.0.1:5000/sports/popularity", "host": ["127.0.0.1"], "port": "5000", "path": ["sports", "popularity"] } }
         }
       ]
-    }
+    },
+    {
+      "name": "Add Sport to Exercise",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/exercise/1/sport/2",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["exercise", "1", "sport", "2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Remove Sport from Exercise",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://127.0.0.1:5000/exercise/1/sport/2",
+          "protocol": "http",
+          "host": ["127.0.0.1"],
+          "port": "5000",
+          "path": ["exercise", "1", "sport", "2"]
+        }
+      },
+      "response": []
+    }    
   ]
 }
  

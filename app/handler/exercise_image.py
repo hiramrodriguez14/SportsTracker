@@ -9,7 +9,7 @@ class ExerciseImageHandler:
         path = json["path"]
         
         dao = ExerciseImageDAO()
-        if not dao.ExerciseExists(exercise_id):
+        if not dao.exerciseExists(exercise_id):
             return jsonify({"error": "Exercise ID not found"}), 404
         id = dao.insertExerciseImage(exercise_id, path)
         
@@ -20,7 +20,7 @@ class ExerciseImageHandler:
         
         dao=ExerciseImageDAO()
         
-        if not dao.ExerciseExists(exercise_id):
+        if not dao.exerciseExists(exercise_id):
             return jsonify({"error": "Exercise ID not found"}), 404
         if not dao.imageExists(image_id):
             return jsonify({"error": "Image ID not found"}), 404

@@ -32,18 +32,19 @@ class AthleteHandler:
         }
 
     def insert_athlete(self, item):
-        required_fields = ["id", "name", "age", "gender", "height", "weight"]
+        required_fields = ["name", "age", "gender", "height", "weight"]
         if not all(field in item for field in required_fields):
             return {"error": "Missing required fields"}, 400
 
-        athlete_id = item["id"]
+        
         name = item["name"]
         age = item["age"]
         gender = item["gender"]
         height = item["height"]
         weight = item["weight"]
 
-        self.dao.create_athlete(athlete_id, name, age, gender, height, weight)
+        athlete_id = self.dao.create_athlete(name, age, gender, height, weight)
+        
         return {
             "id": athlete_id,
             "name": name,
@@ -76,7 +77,7 @@ class AthleteHandler:
             "gender": gender,
             "height": height,
             "weight": weight
-        }
+        }, 200
 
     def delete_athlete(self, athlete_id):
         existing = self.dao.get_athlete_by_id(athlete_id)
