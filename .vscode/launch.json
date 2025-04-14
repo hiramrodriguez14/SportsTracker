@@ -7,10 +7,12 @@
       "request": "launch",
       "program": "${workspaceFolder}/main.py",
       "console": "integratedTerminal",
-      "python": "${workspaceFolder}/.venv/Scripts/python.exe",
       "env": {
-        "PYTHONPATH": "${workspaceFolder}"
-      }
+        "PYTHONPATH": "${workspaceFolder}",
+        "FLASK_ENV": "development",
+        "DB_CHOICE": "1"
+      },
+      "jinja": true
     }
   ]
 }
