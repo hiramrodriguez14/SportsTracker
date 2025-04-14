@@ -211,6 +211,22 @@
             "method": "DELETE",
             "url": { "raw": "http://127.0.0.1:5000/championship/1", "host": ["127.0.0.1"], "port": "5000", "path": ["championship", "1"] }
           }
+        },
+        {
+          "name": "Add Sport to Exercise",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "http://127.0.0.1:5000/exercise/{{exercise_id}}/sport/{{sport_id}}", "host": ["127.0.0.1"], "port": "5000", "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw":  "{\n  \"sport_id\": 2\n}" }
+          }
+        },
+        {
+          "name": "Remove Sport from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "http://127.0.0.1:5000/exercise/{{exercise_id}}/sport/{{sport_id}}", "host": ["127.0.0.1"], "port": "5000", "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] }
+          }
         }
       ]
     },

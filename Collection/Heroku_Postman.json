@@ -316,6 +316,22 @@
                 "path": ["championship", "1"]
               }
             }
+          },
+          {
+            "name": "Add Sport to Exercise",
+            "request": {
+              "method": "POST",
+              "url": { "raw": "http://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/sport/{{sport_id}}", "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] },
+              "header": [{ "key": "Content-Type", "value": "application/json" }],
+              "body": { "mode": "raw", "raw":  "{\n  \"sport_id\": 2\n}" }
+            }
+          },
+          {
+            "name": "Remove Sport from Exercise",
+            "request": {
+              "method": "DELETE",
+              "url": { "raw": "http://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/sport/{{sport_id}}", "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] }
+            }
           }
         ]
       },
