@@ -9,12 +9,11 @@ class DBConfig:
     def __init__(self):
         self.connection_url = None
         self._prompt_user()
-
+        
     def _prompt_user(self):
-        print("\n🔌 Choose database to connect to:")
-        print("1 - Local PostgreSQL")
-        print("2 - Heroku PostgreSQL")
-        choice = input("Enter your choice [1 or 2]: ").strip()
+        choice = os.getenv("DB_CHOICE", "1")  # Default to "1" if not set
+        print("\n🔌 Choosing database to connect to:")
+        print(f"Selected option from ENV: {choice}")
 
         if choice == "1":
             self.connection_url = self._local_db_url()
