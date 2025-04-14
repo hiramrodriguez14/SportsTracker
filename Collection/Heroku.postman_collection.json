@@ -1,0 +1,455 @@
+{
+  "info": {
+    "name": "SportsTracker API - Full (Complete)",
+    "_postman_id": "sports-tracker-full-collection",
+    "description": "Complete API collection for Athlete, Team, Exercise, Championship, Sport, and Analytics endpoints",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Athletes",
+      "item": [
+        {
+          "name": "Get All Athletes",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/athlete", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["athlete"] }
+          }
+        },
+        {
+          "name": "Get Athlete by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/athlete/100", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["athlete", "100"] }
+          }
+        },
+        {
+          "name": "Create Athlete",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/athlete", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["athlete"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 100,\n  \"name\": \"Test Athlete\",\n  \"age\": 25,\n  \"gender\": \"M\",\n  \"height\": 175.5,\n  \"weight\": 70.2\n}" }
+          }
+        },
+        {
+          "name": "Update Athlete",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/athlete/100", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["athlete", "100"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 100,\n  \"name\": \"Updated Name\",\n  \"age\": 26,\n  \"gender\": \"M\",\n  \"height\": 180.0,\n  \"weight\": 75.0\n}" }
+          }
+        },
+        {
+          "name": "Delete Athlete",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/athlete/100", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["athlete", "100"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Teams",
+      "item": [
+        {
+          "name": "Get All Teams",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/team", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["team"] }
+          }
+        },
+        {
+          "name": "Get Team by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/team/200", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["team", "200"] }
+          }
+        },
+        {
+          "name": "Create Team",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/team", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["team"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 200,\n  \"name\": \"Test Team\",\n  \"sport\": 1\n}" }
+          }
+        },
+        {
+          "name": "Update Team",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/team/200", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["team", "200"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"id\": 200,\n  \"name\": \"Updated Team\",\n  \"sport\": 2\n}" }
+          }
+        },
+        {
+          "name": "Delete Team",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/team/200", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["team", "200"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercises",
+      "item": [
+        {
+          "name": "Get All Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise"] }
+          }
+        },
+        {
+          "name": "Get Exercise by ID",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/875",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "875"]
+            }
+          }
+        },
+        {
+          "name": "Create Exercise",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"alter_id\": \"Zottman_Preacher_Curl\",\n  \"category\": \"strength\",\n  \"equipment\": \"dumbbell\",\n  \"force\": \"pull\",\n  \"level\": \"intermediate\",\n  \"mechanic\": \"isolation\",\n  \"name\": \"Zottman Preacher Curl\"\n}" }
+          }
+        },
+        {
+          "name": "Update Exercise",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/875", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise", "875"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"alter_id\": \"Zottman_Preacher_Curl\",\n  \"category\": \"strength\",\n  \"equipment\": \"barbell\",\n  \"force\": \"push\",\n  \"level\": \"advanced\",\n  \"mechanic\": \"compound\",\n  \"name\": \"Zottman Preacher Curl\"\n}" }
+          }
+        },
+        {
+          "name": "Delete Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/875", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise", "875"] }
+          }
+        },
+        {
+          "name": "Get Exercises by Muscle",
+          "request": {
+            "method": "GET",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercises/muscle-group?muscle=chest",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercises", "muscle-group"],
+              "query": [{ "key": "muscle", "value": "chest" }]
+            }
+          }
+        },
+        {
+          "name": "Get Most Complex Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercises/most-complex", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercises", "most-complex"] }
+          }
+        },
+        {
+          "name": "Get Most Performed Exercises",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercises/most-performed", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercises", "most-performed"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Championships",
+      "item": [
+        {
+          "name": "Get All Championships",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championship", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championship"] }
+          }
+        },
+        {
+          "name": "Get Championship by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championship/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championship", "1"] }
+          }
+        },
+        {
+          "name": "Create Championship",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championship", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championship"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"World Cup\",\n  \"year\": 2025,\n  \"winner_team\": 2\n}" }
+          }
+        },
+        {
+          "name": "Update Championship",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championship/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championship", "1"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Cup\",\n  \"year\": 2026,\n  \"winner_team\": 3\n}" }
+          }
+        },
+        {
+          "name": "Delete Championship",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championship/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championship", "1"] }
+          }
+        },
+        {
+          "name": "Add Sport to Exercise",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/sport/{{sport_id}}", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw":  "{\n  \"sport_id\": 2\n}" }
+          }
+        },
+        {
+          "name": "Remove Sport from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/sport/{{sport_id}}", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["exercise", "{{exercise_id}}", "sport", "{{sport_id}}"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Sports",
+      "item": [
+        {
+          "name": "Get All Sports",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sport", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sport"] }
+          }
+        },
+        {
+          "name": "Get Sport by ID",
+          "request": {
+            "method": "GET",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sport/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sport", "1"] }
+          }
+        },
+        {
+          "name": "Create Sport",
+          "request": {
+            "method": "POST",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sport", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sport"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Basketball\"\n}" }
+          }
+        },
+        {
+          "name": "Update Sport",
+          "request": {
+            "method": "PUT",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sport/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sport", "1"] },
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": { "mode": "raw", "raw": "{\n  \"name\": \"Updated Basketball\"\n}" }
+          }
+        },
+        {
+          "name": "Delete Sport",
+          "request": {
+            "method": "DELETE",
+            "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sport/1", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sport", "1"] }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Analytics",
+      "item": [
+        {
+          "name": "Top Teams",
+          "request": { "method": "GET", "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/teams/top-teams", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["teams", "top-teams"] } }
+        },
+        {
+          "name": "Sports Distribution",
+          "request": { "method": "GET", "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/teams/sports-distribution", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["teams", "sports-distribution"] } }
+        },
+        {
+          "name": "Most Championship Wins",
+          "request": { "method": "GET", "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/championships/most-wins", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["championships", "most-wins"] } }
+        },
+        {
+          "name": "Sport Popularity",
+          "request": { "method": "GET", "url": { "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/sports/popularity", "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],  "path": ["sports", "popularity"] } }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Instructions",
+      "item": [
+        {
+          "name": "Add Instruction to Exercise",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/instruction",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "instruction"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"instruction_number\": 3,\n  \"description\": \"Lower your body until your chest nearly touches the floor.\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remove Instruction from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/instruction/{{instruction_id}}",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "instruction", "{{instruction_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Images",
+      "item": [
+        {
+          "name": "Add Image to Exercise",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/image",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "image"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"path\": \"/images/pushup1.png\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remove Image from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/image/{{image_id}}",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "image", "{{image_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Primary Muscles",
+      "item": [
+        {
+          "name": "Add Primary Muscle to Exercise",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/primary-muscle",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "primary-muscle"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"muscle_description\": \"Chest\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remove Primary Muscle from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/primary-muscle/{{muscle_id}}",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "primary-muscle", "{{muscle_id}}"]
+            }
+          }
+        }
+      ]
+    },
+    {
+      "name": "Exercise Secondary Muscles",
+      "item": [
+        {
+          "name": "Add Secondary Muscle to Exercise",
+          "request": {
+            "method": "POST",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/secondary-muscle",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "secondary-muscle"]
+            },
+            "header": [
+              {
+                "key": "Content-Type",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n  \"muscle_description\": \"Triceps\"\n}"
+            }
+          }
+        },
+        {
+          "name": "Remove Secondary Muscle from Exercise",
+          "request": {
+            "method": "DELETE",
+            "url": {
+              "raw": "https://db-spring2025-phga-team-72c9b1d19c25.herokuapp.com/exercise/{{exercise_id}}/secondary-muscle/{{muscle_id}}",
+              "host": ["db-spring2025-phga-team-72c9b1d19c25.herokuapp.com"],
+              
+              "path": ["exercise", "{{exercise_id}}", "secondary-muscle", "{{muscle_id}}"]
+            }
+          }
+        }
+      ]
+    }
+  ]
+}
