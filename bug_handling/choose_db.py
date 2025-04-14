@@ -29,8 +29,8 @@ class DBConfig:
         db_name = os.getenv('DB_NAME', 'sportsdb')
         db_user = os.getenv('DB_USER', 'postgres')
         db_host = os.getenv('DB_HOST', 'localhost')
-        db_port = input("Enter local PostgreSQL port [default 5432]: ").strip() or "5432"
-        db_password = input("Enter local PostgreSQL password: ").strip()
+        db_port = os.getenv('DB_PORT', '5432')
+        db_password = os.getenv('DB_PASSWORD', '')
 
         return f"dbname={db_name} user={db_user} password={db_password} host={db_host} port={db_port}"
 
