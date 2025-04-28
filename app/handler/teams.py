@@ -64,8 +64,8 @@ class TeamHandler:
         dao.deleteTeam(id)
         return '', 204
 
-    def getTopTeams(self):
-        return AnalyticsHandler().getTopTeams()
+    def getTopTeams(self,jsonify_result):
+        return AnalyticsHandler().getTopTeams(jsonify_result)
 
-    def getSportsDistribution(self):
-        return AnalyticsHandler().getSportsDistribution()
+    def getSportsDistribution(self,jsonify_result):
+        return AnalyticsHandler().getSportsDistribution(jsonify_result)

@@ -82,14 +82,26 @@ class ExerciseHandler:
 
 
 
-    def get_most_performed_exercises(self):
+    def get_most_performed_exercises(self, jsonify_result=True):
         exercises = dao.get_most_performed_exercises()
-        return jsonify(exercises), 200
+        
+        if jsonify_result:
+            return jsonify(exercises), 200
+        else:
+            return exercises
 
-    def get_exercises_by_muscle(self, muscle):
+    def get_exercises_by_muscle(self, muscle, jsonify_result=True):
         exercises = dao.get_exercises_by_muscle(muscle)
-        return jsonify(exercises), 200
 
-    def get_most_complex_exercises(self):
+        if jsonify_result:
+            return jsonify(exercises), 200
+        else:
+            return exercises
+
+    def get_most_complex_exercises(self, jsonify_result=True):
         exercises = dao.get_most_complex_exercises()
-        return jsonify(exercises), 200
+
+        if jsonify_result:
+            return jsonify(exercises), 200
+        else:
+            return exercises

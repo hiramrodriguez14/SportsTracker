@@ -5,6 +5,8 @@
 try:
     import streamlit as st
     import time
+    import pandas as pd
+    from app.handler import teams, handler_analytics, exercise
 except ModuleNotFoundError:
     raise ModuleNotFoundError("Required modules are not installed. Please install them using 'pip install streamlit'")
 
@@ -165,15 +167,100 @@ def show_dashboard():
             message_placeholder.markdown(full_response)
         st.session_state.messages.append({"role": "assistant", "content": full_response})
 
-    st.subheader("Choose a Statistical Query")
-    queries = ["Player Performance Trends", "Team Win/Loss Ratio", "Season Statistics", "Player Rankings", "League Standings"]
-    selected_query = st.selectbox("Select a query:", queries)
-    st.success(f"You selected: {selected_query}")
+    # st.subheader("Choose a Statistical Query")
+    # queries = ["Player Performance Trends", "Team Win/Loss Ratio", "Season Statistics", "Player Rankings", "League Standings"]
+    # selected_query = st.selectbox("Select a query:", queries)
+    # st.success(f"You selected: {selected_query}")
 
+    # st.subheader("Statistics Visualization")
+    # st.line_chart({
+    #     'Data': [400, 300, 500, 700, 450]
+    # })
+
+    # Dropdown Menu
+    st.subheader("Choose a Statistical Query")
+    queries = [
+        "Top 3 Teams with Most Championships",
+        "Team Count per Sport",
+        "Sports Popularity Ranking",
+        "Teams with Most Championship Wins",
+        "Top 5 Most Performed Exercises",
+        "Exercises by Muscle Group",
+        "Most Complex Exercises"
+    ]
+    selected_query = st.selectbox("Select a query:", queries)
+
+    # Input for Muscle (only if needed)
+    if selected_query == "Exercises by Muscle Group":
+        muscle_text = st.text_input("Enter a Muscle Group (e.g., Chest, Legs, Back)")
+
+    confirm_button = st.button("Confirm Selection", use_container_width=False)
+
+    # Fetch and Plot
     st.subheader("Statistics Visualization")
-    st.line_chart({
-        'Data': [400, 300, 500, 700, 450]
-    })
+
+
+    if confirm_button:
+
+        if selected_query == "Top 3 Teams with Most Championships":
+            data = teams.TeamHandler().getTopTeams(jsonify_result=False)
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('name')['championships_won'])
+
+        elif selected_query == "Team Count per Sport":
+            data = teams.TeamHandler().getSportsDistribution(jsonify_result=False)
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('sport')['team_count'])
+
+        elif selected_query == "Sports Popularity Ranking":
+            data = handler_analytics.AnalyticsHandler().getSportPopularity(jsonify_result=False)
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('sport')['athlete_count'])
+
+        elif selected_query == "Teams with Most Championship Wins":
+            data = handler_analytics.AnalyticsHandler().getMostChampionshipWins(jsonify_result=False)
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('name')['total_wins'])
+
+        elif selected_query == "Top 5 Most Performed Exercises":
+            data = exercise.ExerciseHandler().get_most_performed_exercises(jsonify_result=False)
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('name')['sports_related'])
+
+        elif selected_query == "Exercises by Muscle Group" and muscle_text:
+            data = exercise.ExerciseHandler().get_exercises_by_muscle(muscle_text,jsonify_result=False) 
+            #get_exercises_by_muscle(muscle_text)
+            df = pd.DataFrame(data)
+            st.dataframe(df)  # Maybe a table instead of a chart
+
+        # elif selected_query == "Most Complex Exercises":
+        #     data = exercise.ExerciseHandler().get_most_complex_exercises(jsonify_result=False)
+        #     df = pd.DataFrame(data)
+        #     st.bar_chart(df.set_index('name')['muscle_groups'])
+
+        # elif selected_query == "Exercises by Muscle Group" and muscle_text:
+        #     data = exercise.ExerciseHandler().get_exercises_by_muscle(muscle_text, jsonify_result=False)
+        #     df = pd.DataFrame(data)
+
+        #     if not df.empty:
+        #         # Assign 1 to each exercise (for graph purposes)
+        #         df['count'] = 1
+        #         st.bar_chart(df.set_index('name')['count'])
+        #     else:
+        #         st.warning("No exercises found for this muscle group.")
+
+        elif selected_query == "Most Complex Exercises":
+            data = exercise.ExerciseHandler().get_most_complex_exercises(jsonify_result=False)
+            # Convert the list of muscle groups into a count
+            for exercise_item in data:
+                exercise_item['muscle_group_count'] = len(exercise_item['muscle_groups'])
+
+            df = pd.DataFrame(data)
+            st.bar_chart(df.set_index('name')['muscle_group_count'])
+
+
+        else:
+            st.warning("Please select a query.")
 
     if st.button("Logout"):
         logout()
