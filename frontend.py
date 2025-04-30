@@ -228,10 +228,17 @@ def show_dashboard():
             st.bar_chart(df.set_index('name')['sports_related'])
 
         elif selected_query == "Exercises by Muscle Group" and muscle_text:
-            data = exercise.ExerciseHandler().get_exercises_by_muscle(muscle_text,jsonify_result=False) 
-            #get_exercises_by_muscle(muscle_text)
-            df = pd.DataFrame(data)
-            st.dataframe(df)  # Maybe a table instead of a chart
+            cleaned_muscle = muscle_text.strip().lower()  # Normalize input
+            try:
+                data = exercise.ExerciseHandler().get_exercises_by_muscle(cleaned_muscle, jsonify_result=False)
+                if data:
+                    df = pd.DataFrame(data)
+                    st.dataframe(df)
+                    #st.dataframe(df[["name"]])  # used to only show names
+                else:
+                    st.warning(f"No exercises found for muscle group: '{muscle_text}'")
+            except Exception as e:
+                st.error(f"Error: {str(e)}")
 
         # elif selected_query == "Most Complex Exercises":
         #     data = exercise.ExerciseHandler().get_most_complex_exercises(jsonify_result=False)
