@@ -7,13 +7,14 @@ try:
     import time
     import pandas as pd
     from app.handler import teams, handler_analytics, exercise
+    from chatollamabot import ChatOllamabot
+
 except ModuleNotFoundError:
     raise ModuleNotFoundError("Required modules are not installed. Please install them using 'pip install streamlit'")
 
 # --- Simulated simple ChatBot ---
-class ChatOllamaBot:
-    def chat(self, prompt):
-        return f"Echo: {prompt} (Simulated Response)"
+bot = ChatOllamabot()
+
 
 # --- Simulated user database (dictionary for this example) ---
 user_db = {}
@@ -67,7 +68,6 @@ st.markdown(f"""
 if 'messages' not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "Let's start chatting!"}]
 
-bot = ChatOllamaBot()
 
 # --- Functions ---
 def login(username, password):
@@ -141,16 +141,16 @@ def show_signup():
 def show_dashboard():
     st.markdown(f"""
         <h1 style='text-align: center; color: #1A56DB;'>Welcome {st.session_state.username}, to SportsTracker</h1>
-        <h3 style='text-align: center;'>I am The Play Maker, your sports AI assistant</h3>
+        <h3 style='text-align: center;'>I am The Play Maker, your exercises AI assistant</h3>
     """, unsafe_allow_html=True)
 
-    st.subheader("Chat with SportsBot")
+    st.subheader("Chat with The Play Maker")
 
     for message in st.session_state.messages:
         with st.chat_message(message["role"]):
             st.markdown(message["content"])
 
-    if prompt := st.chat_input("Ask me anything about sports!"):
+    if prompt := st.chat_input("Ask me anything about exercises!"):
         st.session_state.messages.append({"role": "user", "content": prompt})
 
         with st.chat_message("user"):
@@ -178,7 +178,7 @@ def show_dashboard():
     # })
 
     # Dropdown Menu
-    st.subheader("Choose a Statistical Query")
+    st.subheader("View Statistics")
     queries = [
         "Top 3 Teams with Most Championships",
         "Team Count per Sport",
@@ -188,7 +188,7 @@ def show_dashboard():
         "Exercises by Muscle Group",
         "Most Complex Exercises"
     ]
-    selected_query = st.selectbox("Select a query:", queries)
+    selected_query = st.selectbox("Select a statistic:", queries)
 
     # Input for Muscle (only if needed)
     if selected_query == "Exercises by Muscle Group":
