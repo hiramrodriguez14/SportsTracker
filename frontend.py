@@ -67,6 +67,9 @@ st.markdown(f"""
 # Initialize chat history
 if 'messages' not in st.session_state:
     st.session_state.messages = [{"role": "assistant", "content": "Let's start chatting!"}]
+if 'history' not in st.session_state:
+    st.session_state.history = []
+
 
 
 # --- Functions ---
@@ -159,7 +162,7 @@ def show_dashboard():
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             full_response = ""
-            assistant_response = bot.chat(prompt)
+            assistant_response,st.session_state.history = bot.chat(prompt,st.session_state.history)
             for chunk in assistant_response.split():
                 full_response += chunk + " "
                 time.sleep(0.05)
