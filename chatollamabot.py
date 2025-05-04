@@ -1,7 +1,8 @@
 from sentence_transformers import SentenceTransformer
 from fragmentsDAO import FragmentDAO
 from langchain.prompts import PromptTemplate
-from langchain.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.prompts import ChatPromptTemplate, MessagesPlaceholder
+from langchain_core.messages import AIMessage, HumanMessage
 from langchain_community.chat_models import ChatOllama
 from langchain.schema.output_parser import StrOutputParser
 
@@ -13,47 +14,41 @@ class ChatOllamabot:
 
     def chat(self, question, memory):
         
+        instruction_to_system = """
+       Do NOT answer the question. Given a chat history and the latest user question
+       which might reference context in the chat history, formulate a standalone question
+       which can be understood without the chat history. Do NOT answer the question under ANY circumstance ,
+       just reformulate it if needed and otherwise return it as it is.
        
-        
-        question_maker_prompt = PromptTemplate(
-          template="""
-      Given a chat history and the latest user question, return ONLY the reformulated question if context is needed.
+       Examples:
+         1.History: "Human: Wgat is a beginner friendly exercise that targets biceps? AI: A begginer friendly exercise that targets biceps is Concentration Curls?"
+           Question: "Human: What are the steps to perform this exercise?"
 
-Do not explain.
-Do not include code.
-Do not add labels like "Reformulated Question:".
-Do not answer the question.
-
-Examples:
----
-Question: What muscles does this exercise work?
-History: User: What is a bench press? Assistant: It targets the chest.
-Output: What muscles does a bench press work?
----
-
-Question: How many sets for this?
-History: User: What is a deadlift? Assistant: Its for the back.
-Output: How many sets for a deadlift?
----
-
-Question: {question}
-History: {history}
-Output:""",
-        input_variables=["question", "history"],
-        )
-        
+           Output: "What are the steps to perform the Concentration Curls exercise?"
+           
+         2.History: "Human: What is the category of bench press? AI: The category of bench press is strength."
+           Question: "Human: What are the steps to perform the child pose exercise?"
+           
+           Output: "What are the steps to perform the child pose exercise?"
+       """
+       
         llm = ChatOllama(model="llama3.2", temperature=0)
         
-        question_chain = question_maker_prompt | llm | StrOutputParser()
-        
-        newQuestion = question_chain.invoke({
-            "question": question,
-            "history": memory
-        })
-    
-        
+        question_maker_prompt = ChatPromptTemplate.from_messages(
+          [
+            ("system", instruction_to_system),
+             MessagesPlaceholder(variable_name="chat_history"),
+            ("human", "{question}"), 
+          ]
+        )
        
-        emb = self.model.encode(newQuestion)  
+        question_chain = question_maker_prompt | llm | StrOutputParser()
+       
+        newQuestion = question_chain.invoke({"question": question, "chat_history": memory})
+          
+        actual_question = self.contextualized_question(memory, newQuestion, question)
+        
+        emb = self.model.encode(actual_question)  
         
 
         dao = FragmentDAO()
@@ -64,7 +59,7 @@ Output:""",
         for f in fragments:
             context.append(f[3])
             
-        documents = "\n\n---\n\n".join(c for c in context) #Si algo falla revisar esto
+        documents = "\n\n---\n\n".join(c for c in context) 
 
 
         prompt = PromptTemplate(
@@ -82,25 +77,31 @@ Output:""",
         rag_chain = prompt | llm | StrOutputParser()
 
         answer = rag_chain.invoke({
-            "question": newQuestion,
+            "question": actual_question,
             "documents": documents,
         })
         
-         # Keep only the last 2
-        if len(memory) > self.max_turns:
-            del memory[0]
+       # Keep only the last N turns (each turn = 2 messages)
+        if len(memory) > 2 * self.max_turns:
+            memory = memory[-2 * self.max_turns:]
 
-        # Add new interaction
-        interaction = f"User: {newQuestion}\nAssistant: {answer}"
-            
-        memory.append(interaction)
+
+        # Add new interaction as direct messages
+        memory.append( HumanMessage(content=actual_question))
+        memory.append( AIMessage(content=answer))
+
         
        
         print(newQuestion + " -> " + answer)
             
         for interactions in memory:
            print(interactions)
-           print()  # opcional: línea en blanco entre interacciones
-
+           print() 
 
         return answer, memory
+    
+    def contextualized_question(self, chat_history, new_question, question):
+        if chat_history:
+            return new_question
+        else:
+            return question

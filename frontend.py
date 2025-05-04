@@ -162,7 +162,7 @@ def show_dashboard():
         with st.chat_message("assistant"):
             message_placeholder = st.empty()
             full_response = ""
-            assistant_response,st.session_state.history = bot.chat(prompt,st.session_state.history)
+            assistant_response, st.session_state.history = bot.chat(prompt,st.session_state.history)
             for chunk in assistant_response.split():
                 full_response += chunk + " "
                 time.sleep(0.05)
