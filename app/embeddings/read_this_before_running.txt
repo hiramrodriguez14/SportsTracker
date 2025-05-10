@@ -1,0 +1,3 @@
+gios_heroku_db_vec&frag_setup.py	 this just makes it run on nheroku
+preprocess_jsonl.py		Run first !!!!!!!!!!!!!!!!!
+embed_chunks_and_store.py	Run after chunking

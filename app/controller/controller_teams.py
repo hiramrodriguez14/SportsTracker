@@ -1,5 +1,5 @@
 from flask import Blueprint, request, jsonify
-from handler.teams import TeamHandler
+from app.handler.teams import TeamHandler
 
 team_routes = Blueprint("team_routes", __name__)
 handler = TeamHandler()

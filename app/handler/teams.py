@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.dao.teams import TeamsDAO
+from app.model.dao.teams import TeamsDAO
 from app.handler.handler_analytics import AnalyticsHandler
 
 class TeamHandler:
@@ -64,8 +64,8 @@ class TeamHandler:
         dao.deleteTeam(id)
         return '', 204
 
-    def getTopTeams(self):
-        return AnalyticsHandler().getTopTeams()
+    def getTopTeams(self,jsonify_result):
+        return AnalyticsHandler().getTopTeams(jsonify_result)
 
-    def getSportsDistribution(self):
-        return AnalyticsHandler().getSportsDistribution()
+    def getSportsDistribution(self,jsonify_result):
+        return AnalyticsHandler().getSportsDistribution(jsonify_result)

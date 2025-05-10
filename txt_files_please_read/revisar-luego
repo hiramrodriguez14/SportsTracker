@@ -1,0 +1,29 @@
+✅ Step 2: Test That It Loads in Code
+In frontend.py (just for testing), add this:
+
+python
+Copy
+import os
+from dotenv import load_dotenv
+
+load_dotenv()
+
+st.write("✅ DB_HOST loaded from .env:", os.getenv("DB_HOST"))
+Then run:
+
+bash
+Copy
+streamlit run frontend.py
+✅ If you see your DB host printed in the browser, then .env is working.
+
+✅ Step 3: Remove Test Line
+Once confirmed, remove the st.write(...) line to avoid showing sensitive info.
+
+Let me know what you see when you run streamlit run frontend.py now — is it reading the .env file correctly?
+
+
+
+
+
+
+

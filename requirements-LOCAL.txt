@@ -1,0 +1,16 @@
+Flask
+Flask-Cors
+psycopg2
+pandas
+python-dotenv
+gunicorn
+pgvector
+streamlit
+sentence-transformers
+langchain
+langchain-community
+psycopg2-binary
+bcrypt
+torch
+
+#bajar ollama y llama3.2 y otras cosas de langchain

@@ -22,7 +22,7 @@ def load_exercise_instructions():
         print("Loading JSON file...")
         with open("data/exercise_instructions.json", "r", encoding="utf-8") as file:
             data = json.load(file)
-        print(" File loaded successfully!")
+        print("File loaded successfully!")
 
         for row in data:
             exercise = int(row["exercise_id"])

@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.dao.exercise_secondary_muscles import ExerciseSecondaryMusclesDAO
+from app.model.dao.exercise_secondary_muscles import ExerciseSecondaryMusclesDAO
 
 class ExerciseSecondaryMusclesHandler:
     def insertExerciseSecondaryMuscle(self,eid, json):

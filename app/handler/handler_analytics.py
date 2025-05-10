@@ -1,11 +1,11 @@
 from flask import jsonify
-from app.dao.dao_analytics import AnalyticsDAO
+from app.model.dao.dao_analytics import AnalyticsDAO
 
 class AnalyticsHandler:
     def __init__(self):
         self.dao = AnalyticsDAO()
 
-    def getTopTeams(self):
+    def getTopTeams(self, jsonify_result=True):
         data = self.dao.getTopTeams()
         result = []
         for row in data:
@@ -15,9 +15,14 @@ class AnalyticsHandler:
                 "sport": row[2],
                 "championships_won": row[3]
             })
-        return jsonify(result)
 
-    def getSportsDistribution(self):
+        if jsonify_result:
+            return jsonify(result)
+        else:
+            return result
+    
+
+    def getSportsDistribution(self, jsonify_result=True):
         data = self.dao.getSportsDistribution()
         result = []
         for row in data:
@@ -25,9 +30,13 @@ class AnalyticsHandler:
                 "sport": row[0],
                 "team_count": row[1]
             })
-        return jsonify(result)
+            
+        if jsonify_result:
+            return jsonify(result)
+        else:
+            return result
 
-    def getMostChampionshipWins(self):
+    def getMostChampionshipWins(self, jsonify_result=True):
         data = self.dao.getMostChampionshipWins()
         result = []
         for row in data:
@@ -36,9 +45,12 @@ class AnalyticsHandler:
                 "name": row[1],
                 "total_wins": row[2]
             })
-        return jsonify(result)
+        if jsonify_result:
+            return jsonify(result)
+        else:
+            return result
 
-    def getSportPopularity(self):
+    def getSportPopularity(self, jsonify_result=True):
         data = self.dao.getSportPopularity()
         result = []
         for row in data:
@@ -46,4 +58,7 @@ class AnalyticsHandler:
                 "sport": row[0],
                 "athlete_count": row[1]
             })
-        return jsonify(result)
+        if jsonify_result:
+            return jsonify(result)
+        else:
+            return result

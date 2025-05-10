@@ -1,0 +1,8 @@
+How to change direction to Heroku
+Open your .env file and set:
+
+env
+Copy
+Edit
+DB_CHOICE=2
+DATABASE_URL=your-heroku-db-url

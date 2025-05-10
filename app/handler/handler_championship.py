@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.dao.dao_championship import ChampionshipDAO
+from app.model.dao.dao_championship import ChampionshipDAO
 
 class ChampionshipHandler:
     def __init__(self):

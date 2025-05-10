@@ -8,11 +8,11 @@ def setup_and_activate_venv():
     requirements_file = os.path.join(workspace_path, "requirements.txt")
 
     if sys.prefix == venv_path:
-        print("✅ Virtual environment already activated.")
+        print("Virtual environment already activated.")
         return
 
     if not os.path.exists(venv_path):
-        print("⚠️ Virtual environment not found. Creating one...")
+        print("Virtual environment not found. Creating one...")
         subprocess.run([sys.executable, "-m", "venv", venv_path], check=True)
 
     if sys.platform == "win32":
@@ -25,17 +25,17 @@ def setup_and_activate_venv():
         activate_script = os.path.join(venv_path, "bin", "activate")
 
     if not os.path.exists(pip_exec):
-        print("📦 pip not found in virtual environment. Installing pip...")
+        print("pip not found in virtual environment. Installing pip...")
         subprocess.run([sys.executable, "-m", "ensurepip", "--default-pip"], check=True)
 
     if os.path.exists(requirements_file):
-        print("📦 Installing dependencies from requirements.txt...")
+        print("Installing dependencies from requirements.txt...")
         subprocess.run([python_exec, "-m", "pip", "install", "-r", requirements_file, "--break-system-packages"], check=True)
 
     if "VIRTUAL_ENV" not in os.environ:
-        print("🔁 Virtual environment setup complete. You may need to restart manually.")
+        print("Virtual environment setup complete. You may need to restart manually.")
         sys.exit(0)
 
-    print(f"🔄 To activate manually later, run:\nsource {activate_script}" if sys.platform != "win32" else f"& {activate_script}")
+    print(f"To activate manually later, run:\nsource {activate_script}" if sys.platform != "win32" else f"& {activate_script}")
 
 setup_and_activate_venv()

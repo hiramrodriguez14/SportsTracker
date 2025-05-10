@@ -1,0 +1,6 @@
+my local file will not work on run because i dont have the three pgvector dlls installed
+
+i have to install those!
+
+however i dont need them for heroku one because heroku already has pgvector
+

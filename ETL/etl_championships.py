@@ -27,7 +27,7 @@ def load_championships():
     for row in rows:
         winner_team = int(row[2])
         
-        # ✅ Corrected the any() function
+        
         if any(v is None or v == "" for v in row) or not check_foreign_key(conn_pg, "teams", "id", winner_team):
             continue
         

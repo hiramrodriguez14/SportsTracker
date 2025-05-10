@@ -19,9 +19,9 @@ class FixIdTool:
                 f"SELECT setval(pg_get_serial_sequence('{table}', '{id_column}'), (SELECT MAX({id_column}) FROM {table}));"
             )
             self.conn.commit()
-            print(f"✅ Sequence for '{table}' reset successfully.")
+            print(f"Sequence for '{table}' reset successfully.")
         except Exception as e:
-            print(f"❌ Error resetting sequence: {e}")
+            print(f"Error resetting sequence: {e}")
         finally:
             cursor.close()
             self.conn.close()

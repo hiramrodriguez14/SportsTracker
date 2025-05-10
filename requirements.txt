@@ -1,6 +1,8 @@
 Flask
 Flask-Cors
-psycopg2
+psycopg2-binary 
 pandas
 python-dotenv
 gunicorn
+pgvector
+bcrypt

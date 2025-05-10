@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.dao.exercise_instructions import ExerciseInstructionsDAO
+from app.model.dao.exercise_instructions import ExerciseInstructionsDAO
 
 class ExerciseInstructionsHandler:
     def insertExerciseInstruction(self, exercise_id, json):

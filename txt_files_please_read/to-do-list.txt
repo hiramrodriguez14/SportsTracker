@@ -1,68 +1,16 @@
-Para todos:
+To do list:
 
-Para que el activate_venv les corra tienen que usar el python de windows como interpreter, no el de msys2
+Chatbot: El chatbot funciona, no alucina y sus respuestas son precisas. 
+El unico problema que le veo es que sus respuestas son muy vagas aveces ni contesta la pregunta 
+completa. Todo lo dice en forma de parrafo, no hace bullets ni nada. 
+Eso se prodria resolver probando con un modelo con mas parametros como de 16B o algo asi y/o 
+cambiandole el contexto y dandole mas especificaciones <- yo intentaria esto primero
 
-Eso lo hacen con los environment variables, anadiendo el path de python a System>environment
+Statisctical queries: Ya alejandro casi que lo termino, solo falta que en la de exercise by muscle groups
+se especifique la lista de musculos a poner y hacerle un mini ETL para poner todo en minuscula etc, por ejemplo si el usuario
+pone algo mal tirarle un error porque ahora mismo si en vez de poner lower back pones Lower Back se crashea la app
 
+Login: Falta hacer la tabla login, yo pense en hacerla asi -> id, username, password y ya, cuando se hace sign up se le hace un insert
+y en login un select y verifica si coinciden, hay que hacer que no se entre a la pagina principal sin estar logged
 
------------------------------------
-
-
-hubo un problema con el merge porque hiram codio en una rama vieja antes del submission de fase 1, no en la que we submit, pero lo que hice fue mergear a la de alejandro que si estaba actualizada, pero entonces hiram deberia chequear qu eno falte nada de lo suyo
-
------------------------------------
-
-con respecto a los merge conflicts:
-
-settings json de hiram y el mio,
-    los mezcle en 1
-
-activate venv alejandro y el mio,
-    los mezcle en 1
-
-main, app y app 
-    los
-
------------------------------------
-
-Chequeen el archivo bug_handling > choose_db.py !!!!!
-
-
-Hay que aplicarlo a todos los DAOs
-
-
-from bug_handling.config_router import db_config
-import psycopg2
-
-class AthleteDAO:
-    def __init__(self):
-        self.conn = psycopg2.connect(db_config.connection_url)
-
-
-TO DOOOOOOO
-
-HAY QUE APLICARLO A TODOS LOS DAOS, SO FAR ESTA A:
-
-athletes,
-teams.
-
-falta el resto
-
-
-OTRO TO DOOOOOOO
-
-los controles, solo estan los mios (athlete y teams), falta el resto
-
-
-
------------------------------------
-
---
-giovanny
-
-
-
-
------------------------------------
-
-
+Hacer el login es importante porque lo necesitamos para el bono

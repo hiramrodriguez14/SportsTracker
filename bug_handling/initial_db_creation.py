@@ -1,12 +1,17 @@
-import psycopg2
 import os
+import psycopg2
+import urllib.parse as urlparse
 
-DATABASE_URL = os.getenv("DATABASE_URL")
+url = urlparse.urlparse(os.environ["DATABASE_URL"])
 
-if not DATABASE_URL:
-    raise ValueError("ERROR: DATABASE_URL is not set. Make sure you are using Heroku's environment variables.")
+conn = psycopg2.connect(
+    dbname=url.path[1:],
+    user=url.username,
+    password=url.password,
+    host=url.hostname,
+    port=url.port
+)
 
-conn = psycopg2.connect(DATABASE_URL, sslmode="require")
 cur = conn.cursor()
 
 def table_exists(table_name):
@@ -103,7 +108,31 @@ def create_tables():
                 exercise INT REFERENCES exercises(id) ON DELETE CASCADE,
                 PRIMARY KEY (sport, exercise)
             )
-        """
+        """,
+        "users": """
+            CREATE TABLE users (
+                id SERIAL PRIMARY KEY,
+                email VARCHAR(100) NOT NULL,
+                username VARCHAR(50) UNIQUE NOT NULL,
+                password TEXT NOT NULL,
+                memory TEXT NOT NULL
+            )
+        """,
+        "docs": """
+            CREATE TABLE docs (
+                did SERIAL PRIMARY KEY,
+                docname VARCHAR(255),
+                content TEXT
+            );
+        """,
+        "fragments": """
+            CREATE TABLE fragments (
+                fid SERIAL PRIMARY KEY,
+                did INTEGER REFERENCES docs(did) ON DELETE CASCADE,
+                content TEXT NOT NULL,
+                embedding VECTOR(768)
+            )
+        """,
     }
 
     results = []

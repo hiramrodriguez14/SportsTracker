@@ -1,5 +1,5 @@
 from flask import jsonify
-from app.dao.sport_exercises import SportExercisesDAO
+from app.model.dao.sport_exercises import SportExercisesDAO
 
 class SportExercisesHandler:
     def insertSportExercise(self, eid, sid):
@@ -30,4 +30,3 @@ class SportExercisesHandler:
    
         dao.deleteSportExercise(eid, sid)
         return '', 204
-     
