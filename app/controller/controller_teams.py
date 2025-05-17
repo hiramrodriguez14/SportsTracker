@@ -4,12 +4,6 @@ from app.handler.teams import TeamHandler
 team_routes = Blueprint("team_routes", __name__)
 handler = TeamHandler()
 
-from flask import Blueprint, request, jsonify
-from handler.teams import TeamHandler
-
-team_routes = Blueprint("team_routes", __name__)
-handler = TeamHandler()
-
 @team_routes.route("/team", methods=["GET"])
 def get_all_teams():
     return jsonify(handler.getAllTeams()), 200
