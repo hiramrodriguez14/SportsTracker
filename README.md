@@ -53,6 +53,8 @@ The API allows adding and removing relationships between:
 
 ### Analytics Endpoints
 
+![Analytics](statistics.png)
+
 #### Team & Sports Analytics
 - `GET /teams/top-teams`: Returns the top 3 teams with the most championships won.
 - `GET /teams/sports-distribution`: Counts teams per sport.
@@ -78,12 +80,16 @@ The API allows adding and removing relationships between:
 
 ## Phase 3: Frontend and Chatbot Integration
 
+![Sign in Placeholder](sign_in.png)
+
 - Developed a frontend using Streamlit, chosen for its simplicity and Python compatibility.
 - Implemented sign-in and login functionalities, adding a new table to the database for client information with encrypted passwords.
 - The main page displays dynamic statistics generated from aggregate queries that update according to the data.
 - Features include options such as Team & Sports Analytics and Exercise & Training Trends.
 
 ### Chatbot
+
+![Chatbot Placeholder](chat_bot.png)
 
 - Integrated a chatbot using LLAMA and LangChain.
 - Created a vector table in PostgreSQL with pgvector to store chunked exercise information as vectors.
