@@ -116,7 +116,7 @@ The API allows adding and removing relationships between:
 ## Demo
 
 A demonstration video of the project is available on YouTube:  
-[[Insert YouTube Demo Link Here]](https://www.youtube.com/watch?v=gFGKJ1IQFt8&t=130s)
+[[https://www.youtube.com/watch?v=gFGKJ1IQFt8&t=130s]]
 
 ---
 
